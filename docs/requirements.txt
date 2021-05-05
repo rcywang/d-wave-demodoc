@@ -1,6 +1,6 @@
 py -r pip install autodoc
 py -r pip install sphinxcontrib-napoleon
-py -r pip install git+git://github.com/SuperKogito/sphinxcontrib-pdfembed
+py -m pip install -e git+git://github.com/SuperKogito/sphinxcontrib-pdfembed
 py -r pip install sphinx-autopackagesummary
 py -r pip install sphinx-hoverxref
 py -r pip install sphinxcontrib-packages
