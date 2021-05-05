@@ -3,4 +3,3 @@ py -r pip install sphinxcontrib-napoleon
 
 py -r pip install sphinx-autopackagesummary
 py -r pip install sphinx-hoverxref
-py -r pip install sphinxcontrib-packages
