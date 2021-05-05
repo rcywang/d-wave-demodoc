@@ -18,4 +18,4 @@ Statement of Intent -- Graduate Research
     In the section on *AMO physics* (page 2), I discuss the potential of neutral atom systems as promising candidates for achieving scalable universal quantum computers, despite the low fidelity of multi-qubit gates. The unique entanglement properties of many-body localized (MBL) states are also a useful tool to study non-equilibrium quantum systems and for storing quantum information.
 
 
-:pdfembed:`src:_static/PDFs/StatementofIntent_AcademicGoals_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
+.. :pdfembed:`src:_static/PDFs/StatementofIntent_AcademicGoals_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
