@@ -24,3 +24,5 @@ About Quantum Degenerate Gases
 
 
 .. :pdfembed:`src:_static/PDFs/QDG_Notes_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
+
+.. include:: _static/PDFs/QDG_Notes_RachelWang.pdf
