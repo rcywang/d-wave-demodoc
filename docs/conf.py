@@ -45,7 +45,8 @@ extensions = [
     "sphinx_rtd_theme",
     "sphinx.ext.autodoc", # include documentation from docstrings
     "sphinx.ext.napoleon", # numpy style documentation
-    "sphinx.ext.coverage", # checks coverage
+    # "sphinx.ext.coverage", # checks coverage
+    "sphinx.ext.intersphinx",
     "sphinx.ext.autosummary", # generate autodoc summaries
     "sphinx.ext.doctest", # execute code snippets for demo
     "sphinx.ext.extlinks", # shorten external links
