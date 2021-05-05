@@ -45,7 +45,7 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
       Ideally, documents would be embedded using `Adobe's PDF Embed API <https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html>`_. However, it requires a client ID to use and so this will have to do for the time being.
 
-:pdfembed:`src:_static/PDFs/MLOOpaper_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
+.. :pdfembed:`src:_static/PDFs/MLOOpaper_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
 
 
 
