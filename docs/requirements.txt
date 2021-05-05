@@ -1,5 +1,6 @@
 py -r pip install autodoc
 py -r pip install sphinxcontrib-napoleon
+py -r pip install sphinxcontrib-pdfembed
 py -r pip install sphinx-autopackagesummary
 py -r pip install sphinx-hoverxref
 py -r pip install sphinxcontrib-packages
