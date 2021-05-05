@@ -1,4 +1,4 @@
-py -m pip install autodoc
+pip install autodoc
 py -m pip install sphinxcontrib-napoleon
 py -m pip install sphinx-autopackagesummary
 py -m pip install sphinx-hoverxref
