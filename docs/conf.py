@@ -55,7 +55,7 @@ extensions = [
  #   "sphinxcontrib.pdfembed", # embed PDF files
     "sphinx.ext.githubpages",
     # "edit_on_github",
-    "hoverxref.extension", #must be hosted on readtehdocs
+#    "hoverxref.extension", #must be hosted on readtehdocs
 ]
 
 autosectionlabel_prefix_document = True
