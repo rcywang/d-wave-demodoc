@@ -51,7 +51,7 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
     <div class="container">
         <div class="buttonHolder">
-            <button id="showPDF03">Show pdf</button>
+            <button id="showPDF03">Show ML Review Paper PD</button>
         </div>
     </div>
 
@@ -105,5 +105,3 @@ Papers were judged with respect to:
     * Accuracy
     * Clarity of writing
     * Good coverage of the topic
-
-add someting different
