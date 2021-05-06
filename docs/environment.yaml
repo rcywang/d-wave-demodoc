@@ -14,3 +14,4 @@ dependencies:
     - sphinx-autopackagesummary==1.3
     - sphinx-hoverxref==0.5b1
     - git://github.com/SuperKogito/sphinxcontrib-pdfembed@main
+    - sphinxcontrib-slide==0.3.0
