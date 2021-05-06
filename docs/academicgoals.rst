@@ -37,7 +37,7 @@ Statement of Intent -- Graduate Research
             var adobeDCView = new AdobeDC.View({clientId: "64a7f9f406c54c02b0200c98943b93dd", divId: "adobe-dc-view"});
             adobeDCView.previewFile(
            {
-              content:   {location: {url: "https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:4a6d903a-3c2f-48a8-ba00-16e1faf22788"}},
+              content:   {location: {url: "https://github.com/rcywang/d-wave-demodoc/blob/main/docs/PDFs/StatementofIntent_AcademicGoals_RachelWang.pdf"}},
               metaData: {fileName: "StatementofIntent_AcademicGoals_RachelWang.pdf"}
            });
         });
