@@ -15,6 +15,12 @@ import os, sys
 #sys.path.insert(0, os.path.abspath('_ext'))
 import sphinx_rtd_theme
 
+import numpy
+import scipy.stats
+import matplotlib.pyplot
+import sphinxcontrib-pdfembed
+import sphinxcontrib-slides
+
 # from docutils.parsers.rst import Directive, directives
 
 
@@ -58,7 +64,7 @@ extensions = [
     "sphinx.ext.githubpages",
    # "edit_on_github",
    # "hoverxref.extension", #must be hosted on readtehdocs
-    "sphinxcontrib-slide",
+    "sphinxcontrib.slide",
 ]
 
 autosectionlabel_prefix_document = True
