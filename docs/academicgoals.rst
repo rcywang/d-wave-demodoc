@@ -22,25 +22,24 @@ Statement of Intent -- Graduate Research
 
 .. raw:: html
 
-    <html>
     <head>
-        <title>Your title</title>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+     <title>Academic Goals PDF Viewer</title>
+     <meta charset="utf-8"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-    <body>
-        <div id="adobe-dc-view"></div>
-        <script type="text/javascript">
+    <body style="margin: 0px">
+     <div id="adobe-dc-view"></div>
+     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+     <script type="text/javascript">
         document.addEventListener("adobe_dc_view_sdk.ready", function()
         {
             var adobeDCView = new AdobeDC.View({clientId: "64a7f9f406c54c02b0200c98943b93dd", divId: "adobe-dc-view"});
             adobeDCView.previewFile(
-            {
-                content:  {location: {url: "(C:\Users\Rachel Wang\OneDrive\Documents\VSCode\docstest\source\_static\PDFs\StatementofIntent_AcademicGoals_RachelWang.pdf"}},
-                metaData: {fileName: "StatementofIntent_AcademicGoals_RachelWang.pdf"}
-            });
+           {
+              content:   {location: {url: "https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:4a6d903a-3c2f-48a8-ba00-16e1faf22788"}},
+              metaData: {fileName: "StatementofIntent_AcademicGoals_RachelWang.pdf"}
+           });
         });
-        </script>
+     </script>
     </body>
-    </html>
