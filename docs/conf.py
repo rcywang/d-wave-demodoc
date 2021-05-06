@@ -31,7 +31,7 @@ import sphinx_rtd_theme
 project = 'D-Wave Demo Documentation'
 copyright = '2021, Rachel Wang'
 author = 'Rachel Wang'
-version = 'Rachel Wang'
+version = '0.0.1'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -76,6 +76,9 @@ hoverxref_role_types = {
     'mod': 'tooltip',  # for Python Sphinx Domain
     'class': 'tooltip',  # for Python Sphinx Domain
 }
+
+# The suffix of source filenames
+source_suffix = '.rst'
 
 ## define the master doc
 master_doc = 'index'
@@ -143,6 +146,7 @@ edit_on_github_project = 'rcywang/d-wave-demodoc'
 edit_on_github_branch = 'main'
 
 html_last_updated_fmt = '%b %d, %Y'
+html_use_smartypants = True
 
 
 # -- Options for LaTeX output ---------------------------------------------
