@@ -18,7 +18,7 @@ autodoc_mock_imports = ['_tkinter']
 # from docutils.parsers.rst import Directive, directives
 
 
-#import mock
+import mock
 
 MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot']
 for mod_name in MOCK_MODULES:
