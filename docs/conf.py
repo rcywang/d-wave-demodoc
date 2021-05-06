@@ -52,7 +52,7 @@ extensions = [
     "sphinx.ext.extlinks", # shorten external links
     "sphinx.ext.autosectionlabel", # to refer to internal headers
     "sphinx.ext.viewcode", # imports linked modules
-    "sphinxcontrib.pdfembed", # embed PDF files
+   # "sphinxcontrib.pdfembed", # embed PDF files
     "sphinx.ext.githubpages",
     "edit_on_github",
     "hoverxref.extension", #must be hosted on readtehdocs
