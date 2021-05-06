@@ -16,3 +16,5 @@ dependencies:
     - git://github.com/SuperKogito/sphinxcontrib-pdfembed@main
     - sphinxcontrib-slide==0.3.0
     - numpydoc==1.1.0
+    - scipy==1.6.3
+    - matplotlib==3.4.1
