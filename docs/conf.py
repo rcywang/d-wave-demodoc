@@ -47,6 +47,8 @@ extensions = [
     "sphinx.ext.napoleon", # numpy style documentation
     # "sphinx.ext.coverage", # checks coverage
     "sphinx.ext.intersphinx",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.ifconfig",
     "sphinx.ext.autosummary", # generate autodoc summaries
     "sphinx.ext.doctest", # execute code snippets for demo
     "sphinx.ext.extlinks", # shorten external links
