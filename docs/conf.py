@@ -11,8 +11,8 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os, sys
-sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('_ext'))
+#sys.path.insert(0, os.path.abspath('.'))
+#sys.path.insert(0, os.path.abspath('_ext'))
 import sphinx_rtd_theme
 
 # from docutils.parsers.rst import Directive, directives
