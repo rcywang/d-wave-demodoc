@@ -14,7 +14,6 @@ import os, sys
 #sys.path.insert(0, os.path.abspath('.'))
 #sys.path.insert(0, os.path.abspath('_ext'))
 import sphinx_rtd_theme
-import sphinxcontrib.slides
 
 # from docutils.parsers.rst import Directive, directives
 
