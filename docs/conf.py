@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 import numpy
 import scipy.stats
 import matplotlib.pyplot
-import sphinxcontrib-pdfembed
-import sphinxcontrib-slides
+import sphinxcontrib.pdfembed
+import sphinxcontrib.slides
 
 # from docutils.parsers.rst import Directive, directives
 
@@ -60,11 +60,11 @@ extensions = [
     "sphinx.ext.extlinks", # shorten external links
     "sphinx.ext.autosectionlabel", # to refer to internal headers
     "sphinx.ext.viewcode", # imports linked modules
-   # "sphinxcontrib.pdfembed", # embed PDF files
+   # "sphinxcontrib-pdfembed", # embed PDF files
     "sphinx.ext.githubpages",
    # "edit_on_github",
    # "hoverxref.extension", #must be hosted on readtehdocs
-    "sphinxcontrib.slide",
+    "sphinxcontrib-slide",
 ]
 
 autosectionlabel_prefix_document = True
