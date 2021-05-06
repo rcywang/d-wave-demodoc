@@ -1,4 +1,4 @@
-const clientId = "e800d12fc12c4d60960778b2bc4370af";
+const clientId = "64a7f9f406c54c02b0200c98943b93dd";
 const viewerOptions = {
     embedMode: "LIGHT_BOX",
     defaultViewMode: "FIT_PAGE",
