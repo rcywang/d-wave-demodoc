@@ -20,4 +20,27 @@ Statement of Intent -- Graduate Research
 
 .. :pdfembed:`src:_static/PDFs/StatementofIntent_AcademicGoals_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
 
-.. slide:: https://docs.google.com/presentation/d/e/2PACX-1vSuDEFifedqZfxEGcJ9vBb5eaGEFwwPjz-r1a3eehjfSDSDhZt8x4Tl8ol9Ox_-eM0ufb7vm6wBcGx9/pub?start=true&loop=true&delayms=60000
+.. raw:: html
+
+    <html>
+    <head>
+        <title>Your title</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    </head>
+    <body>
+        <div id="adobe-dc-view"></div>
+        <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function()
+        {
+            var adobeDCView = new AdobeDC.View({clientId: "64a7f9f406c54c02b0200c98943b93dd", divId: "adobe-dc-view"});
+            adobeDCView.previewFile(
+            {
+                content:  {location: {url: "(C:\Users\Rachel Wang\OneDrive\Documents\VSCode\docstest\source\_static\PDFs\StatementofIntent_AcademicGoals_RachelWang.pdf"}},
+                metaData: {fileName: "StatementofIntent_AcademicGoals_RachelWang.pdf"}
+            });
+        });
+        </script>
+    </body>
+    </html>
