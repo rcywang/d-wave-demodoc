@@ -58,7 +58,7 @@ extensions = [
     "sphinx.ext.githubpages",
    # "edit_on_github",
    # "hoverxref.extension", #must be hosted on readtehdocs
-    "sphinxcontrib-slide",
+    "sphinx.ext.slide",
     "numpydoc",
 ]
 
