@@ -14,15 +14,15 @@ import os, sys
 #sys.path.insert(0, os.path.abspath('.'))
 #sys.path.insert(0, os.path.abspath('_ext'))
 import sphinx_rtd_theme
-
+autodoc_mock_imports = ['_tkinter']
 # from docutils.parsers.rst import Directive, directives
 
 
 #import mock
 
-#MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot']
-#for mod_name in MOCK_MODULES:
-#    sys.modules[mod_name] = mock.Mock()
+MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
 
 
 
