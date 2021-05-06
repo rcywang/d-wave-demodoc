@@ -20,3 +20,4 @@ Statement of Intent -- Graduate Research
 
 .. :pdfembed:`src:_static/PDFs/StatementofIntent_AcademicGoals_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
 
+.. slide:: https://docs.google.com/presentation/d/e/2PACX-1vSuDEFifedqZfxEGcJ9vBb5eaGEFwwPjz-r1a3eehjfSDSDhZt8x4Tl8ol9Ox_-eM0ufb7vm6wBcGx9/pub?start=true&loop=true&delayms=60000
