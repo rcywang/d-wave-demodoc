@@ -19,10 +19,9 @@ About Quantum Degenerate Gases
     This document is a work-in-progress. 
     
     
- .. raw:: html
+.. raw:: html
  
     <head>
-     <title>Adobe PDF Embed API QDG</title>
      <meta charset="utf-8"/>
      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
