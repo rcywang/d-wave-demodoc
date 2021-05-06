@@ -63,7 +63,8 @@ extensions = [
 
 autosectionlabel_prefix_document = True
 #extensions.append('sphinx_execute_code')
-
+autodoc_default_flags = ['members']
+autosummary_generate = True
 
 napoleon_numpy_docstring = True
 napoleon_include_init_with_doc = False
