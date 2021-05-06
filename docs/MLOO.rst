@@ -47,7 +47,38 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
 .. :pdfembed:`src:_static/PDFs/MLOOpaper_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
 
+.. raw:: html
 
+    <head>
+     <title>Adobe PDF Embed API MLOO Paper</title>
+     <meta charset="utf-8"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+
+    <div class="container">
+        <div class="buttonHolder">
+            <button id="showPDF03">Show pdf</button>
+        </div>
+    </div>
+
+    <body style="margin: 0px">
+     <div id="adobe-dc-view" style="height: 760px; width: 800px;"></div>
+     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+     <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function()
+        {
+            var adobeDCView = new AdobeDC.View({clientId: "64a7f9f406c54c02b0200c98943b93dd", divId: "adobe-dc-view"});
+            adobeDCView.previewFile(
+           {
+              content:   {location: {url: "https://dl.dropboxusercontent.com/s/3jslattisxo78h8/MLOOpaper_RachelWang.pdf?dl=0"}},
+              metaData: {fileName: "MLOOpaper_RachelWang.pdf"}
+            }, {embedMode: "LIGHT_BOX",
+                enableLinearization: true}
+            );
+        });
+     </script>
+    </body>
 
 
 |
