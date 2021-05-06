@@ -54,7 +54,7 @@ extensions = [
     "sphinx.ext.viewcode", # imports linked modules
    # "sphinxcontrib.pdfembed", # embed PDF files
     "sphinx.ext.githubpages",
-    "edit_on_github",
+   # "edit_on_github",
     "hoverxref.extension", #must be hosted on readtehdocs
 ]
 
