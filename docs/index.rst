@@ -135,7 +135,7 @@ On this landing page could be shortcuts, quick information, or help links.
    :hidden:
 
    contact
-   /latex_files/mycv
+   mycv
    research
 
 
