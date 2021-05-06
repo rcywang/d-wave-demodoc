@@ -13,3 +13,4 @@ dependencies:
     - sphinxcontrib-napoleon==0.7
     - sphinx-autopackagesummary==1.3
     - sphinx-hoverxref==0.5b1
+    - git+git://github.com/SuperKogito/sphinxcontrib-pdfembed==0.1
