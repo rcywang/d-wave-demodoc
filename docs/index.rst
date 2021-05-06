@@ -49,7 +49,6 @@ On this landing page could be shortcuts, quick information, or help links.
 
      * :doc:`../fourier`
      * :doc:`../randomsamp`
-     * :doc:`../matplotlib`
      * :doc:`../main`
 
    * **Writing Samples**
