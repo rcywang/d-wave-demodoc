@@ -104,7 +104,7 @@ On this landing page could be shortcuts, quick information, or help links.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Modules (autodoc)
+   :caption: Autodoc Packages
    :name: demos
    :hidden:
 
