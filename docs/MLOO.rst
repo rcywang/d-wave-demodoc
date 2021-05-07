@@ -43,6 +43,8 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
 .. raw:: html
 
+
+
     <head>
      <meta charset="utf-8"/>
      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -52,11 +54,10 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
     <div class="container">
         <div class="buttonHolder">
             <button id="showPDF03">Show ML Review Paper PDF</button>
-        </div>
     </div>
 
     <body style="margin: 0px">
-     <div id="adobe-dc-view"></div>
+     <div id="adobe-dc-view;"></div>
      <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
      <script type="text/javascript">
         document.addEventListener("adobe_dc_view_sdk.ready", function()
@@ -66,8 +67,7 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
            {
               content:   {location: {url: "https://dl.dropboxusercontent.com/s/3jslattisxo78h8/MLOOpaper_RachelWang.pdf?dl=0"}},
               metaData: {fileName: "MLOOpaper_RachelWang.pdf"}
-            }, {embedMode: "LIGHT_BOX",
-                enableLinearization: true}
+            }, {embedMode: "LIGHT_BOX"}
             );
         });
      </script>
