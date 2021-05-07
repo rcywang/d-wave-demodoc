@@ -34,7 +34,7 @@ About Quantum Degenerate Gases
     </div>
 
     <body style="margin: 0px">
-     <div id="adobe-dc-view"></div>
+     <div id="adobe-dc-view" style="height: 760px; width: 800px;"></div>
      <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
      <script type="text/javascript">
         document.addEventListener("adobe_dc_view_sdk.ready", function()
@@ -50,7 +50,7 @@ About Quantum Degenerate Gases
         });
      </script>
     </body>
-    
+
 .. It is continuously being updated as I learn more about the topic.
 
 
