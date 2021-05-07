@@ -125,7 +125,9 @@ html_static_path = ['_static']
 def setup(app):
     app.add_stylesheet('css/custom.css')
 
-
+html_js_files = [
+    'js/custom.js',
+]
 
 # Theme options
 html_theme_options = {
