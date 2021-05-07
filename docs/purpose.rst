@@ -83,21 +83,21 @@ Installation
 * Code examples
 
 
-EXAMPLES
+Examples
 """"""""
 
 * Code-in-action (for various cases)
 * Common issues (FAQ) and fixes
 
 
-APPLICATIONS
+Applications
 """"""""""""
 
 * Commercial
 * Research
 
 
-CONTACT
+Contact
 """""""
 
 * Technical support
