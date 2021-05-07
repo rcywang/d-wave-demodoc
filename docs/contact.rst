@@ -3,10 +3,7 @@ Contact
 
 :Author:
     Rachel Wang
-
-.. :Version: 
-..     0.0.1
-
+    
 :Email:
     `rachel.cy.wang@gmail.com <mailto:rachel.cy.wang@gmail.com>`_
 
