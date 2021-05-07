@@ -22,31 +22,9 @@ Statement of Intent -- Graduate Research
 
 .. raw:: html
 
-    <head>
-     <meta charset="utf-8"/>
-     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
-    </head>
-
     <div class="container">
         <div class="buttonHolder">
             <button id="showPDF01">Show Academic Goals PDF</button>
         </div>
     </div>
-
-    <body style="margin: 0px">
-     <div id="adobe-dc-view;"></div>
-     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-     <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function()
-        {
-            var adobeDCView = new AdobeDC.View({clientId: "64a7f9f406c54c02b0200c98943b93dd", divId: "adobe-dc-view"});
-            adobeDCView.previewFile(
-           {
-              content:   {location: {url: "https://dl.dropboxusercontent.com/s/3jb1qrfrmxwgvgq/StatementofIntent_AcademicGoals_RachelWang.pdf?dl=0"}},
-              metaData: {fileName: "StatementofIntent_AcademicGoals_RachelWang.pdf"}
-            }, {embedMode: "LIGHT_BOX"}
-            );
-        });
-     </script>
-    </body>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
