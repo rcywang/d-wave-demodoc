@@ -2,7 +2,7 @@ const clientId = "64a7f9f406c54c02b0200c98943b93dd";
 const viewerOptions = {
     embedMode: "LIGHT_BOX",
     defaultViewMode: "FIT_PAGE",
-    showDownloadPDF: true,
+    showDownloadPDF: false,
     showPrintPDF: false
 };
 
