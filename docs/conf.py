@@ -64,6 +64,8 @@ extensions = [
 
 autosectionlabel_prefix_document = True
 #extensions.append('sphinx_execute_code')
+intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+numfig = True
 autodoc_default_flags = ['members']
 autosummary_generate = True
 
