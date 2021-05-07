@@ -70,7 +70,7 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
 
 
-
+|
 
 
 .. _about-competition:
