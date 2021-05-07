@@ -18,11 +18,7 @@ As someone who is interested -- but by no means an expert -- in machine learning
 See :ref:`competition rules <about-competition>` below.
 
 
-.. |link_MLOO|
 
-.. .. |link_MLOO| raw:: html
-
-..     <a href="https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments"><h3>Machine-learning online optimization (MLOO) for cold-atom experiments</h3></a>
 
 
 .. [#foot1] Specifically, I am interested in universality classes in non-equilibrium quantum many-body systems. Read more about my :ref:`research interests <research>`.
@@ -42,8 +38,6 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
 
 
 .. raw:: html
-
-
 
     <head>
      <meta charset="utf-8"/>
