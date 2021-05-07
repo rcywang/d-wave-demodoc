@@ -93,13 +93,13 @@ EXAMPLES
 APPLICATIONS
 """"""""""""
 
-* commercial
-* research
+* Commercial
+* Research
 
 
 CONTACT
 """""""
 
-* technical support
-* company address / contact
-* community contribution
+* Technical support
+* Company address / contact
+* Community contribution
