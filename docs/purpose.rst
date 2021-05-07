@@ -93,8 +93,8 @@ Examples
 Applications
 """"""""""""
 
-* Commercial
-* Research
+* Commercial (link to examples of use -- e.g. vehicle routing problems, satellite optimization, etc.)
+* Research (link to papers on `arXiv <arXiv.org>`_)
 
 
 Contact
@@ -102,4 +102,4 @@ Contact
 
 * Technical support
 * Company address / contact
-* Community contribution
+* Community forum
