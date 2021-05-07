@@ -29,7 +29,7 @@ About Quantum Degenerate Gases
 
     <div class="container">
         <div class="buttonHolder">
-            <button id="showPDF01">Show QDG Mini-textbook PDF</button>
+            <button id="showPDF02">Show QDG Mini-textbook PDF</button>
         </div>
     </div>
 
