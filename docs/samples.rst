@@ -4,7 +4,7 @@ Overview
 ========
 .. Quick Links & Summaries
 
-Here are some **additional technical writing samples** of documents/papers I have written that exemplify my  proficiency in technical writing. For a more comprehensive representation of my skills, I have included writing samples from a variety of sources. Links to all samples are listed below with their accompanying description.
+Here are some **additional technical writing samples** of documents/papers I have written that exemplify my proficiency in technical writing. For a more comprehensive representation of my skills, I have included writing samples from a variety of sources. Links to all samples are listed below with their accompanying description.
 
 .. .. raw:: html
 
@@ -48,12 +48,12 @@ Here are some **additional technical writing samples** of documents/papers I hav
     <h3>Statement of Intent: Academic Goals</h3>
 
 
-*This is an exerpt from my UBC graduate studies (MSc) application for Fall 2021. It contains a detailed description of two of my research areas of interest:*
+*This is an excerpt from my UBC graduate studies (MSc) application for Fall 2021. It contains a detailed description of two of my research areas of interest:*
 
 
 
     High-energy astrophysics
-        My post-graduate (BSc) with Dr. Jeremy Heyl was focused on the effects of strong-field QED on polarized emission from isolated neutron stars (NS) -- a phenomenon known as **vacuum birefringence** [#foot2]_. Related to my interest in NSs is determining the full equation of state (EoS) for cold, dense matter (*nuclear physics*). The EoS is incomplete for matter above a critical nuclear saturation density; such matter is thought to exist only in the cores of NSs.
+        My post-graduate (BSc) work with Dr. Jeremy Heyl was focused on the effects of strong-field QED on polarized emission from isolated neutron stars (NS) -- a phenomenon known as **vacuum birefringence** [#foot2]_. Related to my interest in NSs is determining the full equation of state (EoS) for cold, dense matter (*nuclear physics*). The EoS is incomplete for matter above a critical nuclear saturation density; such matter is thought to exist only in the cores of NSs.
     
 
     Atomic, molecular, and optical (AMO) physics
