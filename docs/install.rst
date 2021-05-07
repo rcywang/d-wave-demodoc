@@ -1,6 +1,9 @@
 Installing Ocean Tools
 ======================
 
+This section uses the `Install Ocean Tools <https://docs.ocean.dwavesys.com/en/stable/overview/install.html>`_ instructions from D-Wave’s official `Ocean Documentation <https://docs.ocean.dwavesys.com/en/stable/index.html>`_ and is meant as a placeholder or example for the configuration section of software installation/documentation.
+
+----
 
 The Ocean software is a suite of tools D-Wave Systems provides on the D-Wave GitHub repository for solving hard problems with quantum computers. This section explains how to install Ocean software.
 
