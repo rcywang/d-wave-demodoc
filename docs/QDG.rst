@@ -43,7 +43,7 @@ About Quantum Degenerate Gases
             adobeDCView.previewFile(
            {
               content:   {location: {url: "https://dl.dropboxusercontent.com/s/8ya3urr4mxtgyue/QDG_Notes_RachelWang.pdf?dl=0"}},
-              metaData: {fileName: "QDG_Notes__RachelWang.pdf"}
+              metaData: {fileName: "QDG_Notes_RachelWang.pdf"}
             }, {embedMode: "LIGHT_BOX"}
             );
         });
