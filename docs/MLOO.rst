@@ -54,7 +54,8 @@ Machine-learning online optimization (MLOO) for cold-atom experiments
     <div class="container">
         <div class="buttonHolder">
             <button id="showPDF01">Show ML Review Paper PDF</button>
-    </div>
+        </div>
+    <div>
 
     <body style="margin: 0px">
      <div id="adobe-dc-view;"></div>
