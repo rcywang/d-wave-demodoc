@@ -29,7 +29,7 @@ About Quantum Degenerate Gases
 
     <div class="container">
         <div class="buttonHolder">
-            <button id="showPDF02">Show QDG Mini-textbook PDF</button>
+            <button id="showPDF01">Show QDG Mini-textbook PDF</button>
         </div>
     </div>
 
@@ -44,8 +44,7 @@ About Quantum Degenerate Gases
            {
               content:   {location: {url: "https://dl.dropboxusercontent.com/s/8ya3urr4mxtgyue/QDG_Notes_RachelWang.pdf?dl=0"}},
               metaData: {fileName: "QDG_Notes__RachelWang.pdf"}
-            }, {embedMode: "LIGHT_BOX",
-                enableLinearization: true}
+            }, {embedMode: "LIGHT_BOX"}
             );
         });
      </script>
