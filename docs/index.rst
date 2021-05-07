@@ -45,7 +45,7 @@ On this landing page could be shortcuts, quick information, or help links.
    
      | 
    
-   * **Modules (autodoc)**
+   * **Autodoc Packages**
 
      * :doc:`../fourier`
      * :doc:`../randomsamp`
