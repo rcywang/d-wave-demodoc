@@ -18,11 +18,7 @@ As someone who is interested -- but by no means an expert -- in machine learning
 See :ref:`competition rules <about-competition>` below.
 
 
-.. |link_MLOO|
 
-.. .. |link_MLOO| raw:: html
-
-..     <a href="https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments"><h3>Machine-learning online optimization (MLOO) for cold-atom experiments</h3></a>
 
 
 .. [#foot1] Specifically, I am interested in universality classes in non-equilibrium quantum many-body systems. Read more about my :ref:`research interests <research>`.
@@ -40,17 +36,18 @@ See :ref:`competition rules <about-competition>` below.
 Machine-learning online optimization (MLOO) for cold-atom experiments
 *********************************************************************
 
+.. |link_MLOO|
 
-    .. note::
+.. .. |link_MLOO| raw:: html
 
-      Ideally, documents would be embedded using `Adobe's PDF Embed API <https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html>`_. However, it requires a client ID to use and so this will have to do for the time being.
+..     <a href="https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments"><h3>Machine-learning online optimization (MLOO) for cold-atom experiments</h3></a>
 
-.. :pdfembed:`src:_static/PDFs/MLOOpaper_RachelWang.pdf#view=FitH&zoom=100, height:1000, width:100%, align:middle`
-
+.. tip:: 
+    
+    You can also view my ML review paper on the `Spectra.pub <https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments>`_ website.
 
 
 .. raw:: html
-
 
     <head>
      <meta charset="utf-8"/>
