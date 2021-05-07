@@ -30,16 +30,23 @@ function showPDF(urlToPDF) {
 }
 
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
-    document.getElementById("showPDF01").addEventListener("click", function () {
+    document.getElementById('showPDF01').addEventListener("click", function () {
         showPDF("https://dl.dropboxusercontent.com/s/3jb1qrfrmxwgvgq/StatementofIntent_AcademicGoals_RachelWang.pdf?dl=0")
     });
-    document.getElementById("showPDF02").addEventListener("click", function () {
+});
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    document.getElementById('showPDF02').addEventListener("click", function () {
         showPDF("https://dl.dropboxusercontent.com/s/8ya3urr4mxtgyue/QDG_Notes_RachelWang.pdf?dl=0")
     });
-    document.getElementById("showPDF03").addEventListener("click", function () {
+});
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    document.getElementById('showPDF03').addEventListener("click", function () {
         showPDF("https://dl.dropboxusercontent.com/s/3jslattisxo78h8/MLOOpaper_RachelWang.pdf?dl=0")
     });
 });
+
 
 // Add arrayBuffer if necessary i.e. Safari
 (function () {
