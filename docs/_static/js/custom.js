@@ -57,3 +57,12 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         });
     }
 })();
+
+
+// use cookies to check if it is the user's first time
+
+$('document').ready(function(){
+    if ($.cookie('has_visited') != TRUE){
+       $('#ele_id').trigger('click');
+       $.cookie('has_visited', TRUE, { expires: 1 }); //this will set the cookie to expire after one day but you could make it longer
+   });
