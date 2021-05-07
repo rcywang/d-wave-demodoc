@@ -31,6 +31,7 @@ Statement of Intent -- Graduate Research
     <div class="container">
         <div class="buttonHolder">
             <button id="showPDF01">Show Academic Goals PDF</button>
+        </div>
     </div>
 
     <body style="margin: 0px">
