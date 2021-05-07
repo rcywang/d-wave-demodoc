@@ -3,7 +3,17 @@
 Research Interests
 ==================
 
-A page describing my research interests and how they relate to work done at D-Wave.
+There are a few parallels that can be drawn between my research interests/experience and the work done at D-Wave. A few examples of related concepts are presented -- in a side-by-side comparison -- in the following sections. 
+
+.. panels::
+
+    Top left 
+
+    ----
+
+    top-right
+
+
 
 For example:
 
