@@ -60,8 +60,8 @@ extensions = [
    # "hoverxref.extension", #must be hosted on readtehdocs
     "numpydoc",
     "sphinx.ext.mathjax",
-    "sphinx_togglebutton",
-    "sphinx_panels",
+ #   "sphinx_togglebutton",
+ #   "sphinx_panels",
 ]
 
 autosectionlabel_prefix_document = True
