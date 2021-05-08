@@ -19,6 +19,10 @@ reST
     reStructuredText (reST) is an easy-to-read plaintext markup syntax and parser system. It is useful for in-line program documentation (e.g. Python docstrings), for quickly creating simple web pages, and for standalone documents. It is designed specifically for extensibility for application domains. It is a revision and reinterpretation of the `StructuredText <https://en.wikipedia.org/wiki/Structured_text>`_ and `Setext <https://docutils.sourceforge.io/mirror/setext.html>`_ lightweight markup systems.
 
 
+Bose-Einstein Condensate (BEC)
+    In condensed matter physics, a Bose-Einstein condensate is a state of matter typically formed from a gas of integer spin particles (bosons) when cooled to temperatures close to absolute zero. The quantum state of a BEC can be collectively characterized by a single macroscopic wave function. Below a critical temperature, a large fraction of bosons occupy the lowest-energy state (ground state) and assume identical wave identities, acting like a ‘super atom’ that exhibits quantum behaviour at a macroscopic level.
+
+
 Hybrid solver
     Quantum-classical hybrid solvers implement state-of-the-art classical algorithms together with intelligent allocation of the QPU to parts of the problem where it benefits most.
 
