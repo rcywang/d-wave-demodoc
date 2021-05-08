@@ -59,7 +59,8 @@ extensions = [
    # "edit_on_github",
    # "hoverxref.extension", #must be hosted on readtehdocs
     "numpydoc",
-    "sphinx_panels"
+    "sphinx.ext.mathjax",
+    "sphinx_togglebutton",
 ]
 
 autosectionlabel_prefix_document = True
@@ -159,6 +160,11 @@ html_use_smartypants = True
 
 
 # -- Options for LaTeX output ---------------------------------------------
+latex_engine = 'xelatex'
+latex_elements = {'preamble':r'\usepackage{physics}, \usepackage{amssymb}, \usepackage{amsfonts}'
+}
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+
 
 
 # latex_engine = 'pdfLaTeX'
