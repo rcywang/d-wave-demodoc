@@ -93,7 +93,9 @@ Examples
 Applications
 """"""""""""
 
-* Commercial (link to examples of use -- e.g. vehicle routing problems, satellite optimization, etc.)
+* Commercial
+  * Optimization (e.g. social network analysis, traffic flow, web advertising, etc.)
+  * Constraint satisfaction (e.g. portfolio optimization, scheduling, circuit fault detection, etc.)
 * Research (link to papers on `arXiv <arXiv.org>`_)
 
 
