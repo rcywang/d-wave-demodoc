@@ -7,7 +7,7 @@ As a study tool (and also out of my own pure enjoyment), I write 'mini-textbooks
 
 As shown in this QDG mini-textbook, I thoroughly review every aspect of a topic -- such as the underlying theory, the experimental apparatus, claims and their corresponding proofs, and even ideas that are tangentially related (to deepen my understanding). Currently, I am reading some of the `group's publications <https://phas.ubc.ca/~qdg/publications/index.html>`_ to stay up-to-date. 
 
-These documents are for personal use, and not for distribution, and so some of the language is somewhat colloquial.
+These documents are for personal use, and not for distribution, and so some language is somewhat colloquial.
 
 
 
