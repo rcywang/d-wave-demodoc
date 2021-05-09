@@ -1,6 +1,6 @@
 Custom Module
 =============
-:code:`main.py` is a custom module written by me (as an example).
+:code:`main.py` is an example custom module.
 
 
 
