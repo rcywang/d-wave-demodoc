@@ -3,7 +3,7 @@
 Installing Ocean Tools
 ======================
 
-This section uses the `Install Ocean Tools <https://docs.ocean.dwavesys.com/en/stable/overview/install.html>`_ instructions from D-Wave’s official `Ocean Documentation <https://docs.ocean.dwavesys.com/en/stable/index.html>`_ and is meant as a placeholder or example for the configuration section of software installation/documentation.
+This section uses the `Install Ocean Tools <https://docs.ocean.dwavesys.com/en/stable/overview/install.html>`_ instructions from D-Wave’s official `Ocean Documentation <https://docs.ocean.dwavesys.com/en/stable/index.html>`_ and is meant as a placeholder and example for the configuration section of software installation/documentation.
 
 ----
 
@@ -59,7 +59,7 @@ It is recommended that you work in a `virtual environment <https://virtualenv.py
 
 2. Install the virtualenv tool for creating isolated Python environments.
 
- For Unix-based systems, installation is typically done with a command such as:
+ For Unix-based systems, installation is typically done with a command like:
 
  .. code-block:: bash
 
@@ -117,9 +117,9 @@ Via GitHub
 Install a Particular Tool
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you only wish to install a particular tool within the SDK, follow the installation instructions on the README file. For example, to download only the ``dwave-neal`` tool, navigate to the corresponding `README.rst <https://github.com/dwavesystems/dwave-neal/blob/master/README.rst>`_ file on GitHub.
+If you only wish to install a particular tool within the SDK, follow the installation instructions in the README file. For example, to download only the ``dwave-neal`` tool, navigate to the corresponding `README.rst <https://github.com/dwavesystems/dwave-neal/blob/master/README.rst>`_ file on GitHub.
 
-For other tools, follow the links in the navigation sidebar, listed under the "TOOLS" column, for the particular tool.
+For other tools, follow the links in the navigation sidebar listed under the "TOOLS" column, for the particular tool.
 
 
 .. _venvsetup:
@@ -168,7 +168,7 @@ A list of open-source licenses may follow here:
 * etc.
 
 
-A list of non-open-source packages that require end-user license agreements, which are provided here:
+A list of non-open-source packages that require end-user license agreements may follow here:
 
 * link to EULA 1
 * link to EULA 2
