@@ -4,11 +4,6 @@ Examples
 This page would have links to code examples like `D-Wave Examples <https://github.com/dwave-examples>`_ and a concise accompanying description. Instead of mirroring the content from the Ocean Documentation Examples, I will only include (some) titles and one example (link) for each.
 
 
-.. * Leap's hybrid BQM solver
-..   * `Structural Imbalance in a Social Network <https://docs.ocean.dwavesys.com/en/stable/examples/hybrid_solver_service.html>`_
-..   * `Map Coloring: Hybrid DQM Sampler <https://docs.ocean.dwavesys.com/en/stable/examples/map_dqm.html>`_
-.. * 
-
 Beginner-Level Examples: Hybrid Computing
 -----------------------------------------
 
