@@ -110,7 +110,7 @@ Applications
   * Optimization (e.g. social network analysis, traffic flow, web advertising, etc.)
   * Constraint satisfaction (e.g. portfolio optimization, scheduling, circuit fault detection, etc.)
 
-* Research (link to papers on `arXiv <arXiv.org>`_ and to `D-Wave's Quantum Applications <https://www.dwavesys.com/applications>`_ page)
+* Research (link to papers on `arXiv <https://arxiv.org/>`_ and to `D-Wave's Quantum Applications <https://www.dwavesys.com/applications>`_ page)
 
 
 Contact
