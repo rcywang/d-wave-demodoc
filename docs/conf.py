@@ -61,6 +61,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx_togglebutton",
     "sphinx_panels",
+    "sphinxcontrib-details-directive",
 ]
 
 autosectionlabel_prefix_document = True
