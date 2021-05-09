@@ -65,7 +65,7 @@ About the Spectra Competition
 *****************************
 
 
-Mathpix is a tool for extracting text/equations from images and documents, making typing LaTeX documents faster and less tedious. The core technology of `Mathpix Snip <https://mathpix.com/>`_, the consumer app, is a publicly available API `MathpixOCR <https://mathpix.com/ocr>`_ for developers. Recently (March 2021), they announced the Spectra Review Paper Competition with the aim providing a platform, Spectra, presenting ML content to researchers/practitioners in HTML. 
+Mathpix is a tool for extracting text/equations from images and documents, making typing LaTeX documents faster and less tedious. The core technology of `Mathpix Snip <https://mathpix.com/>`_, the consumer app, is a publicly available API `MathpixOCR <https://mathpix.com/ocr>`_ for developers. Recently (March 2021), they announced the Spectra Review Paper Competition with the aim of providing a platform, Spectra, presenting ML content to researchers/practitioners in HTML. 
 
 
 .. _criteria:
