@@ -20,7 +20,7 @@ After visiting the `Ocean documentation <https://docs.ocean.dwavesys.com/en/stab
 What does this doc contain?
 ---------------------------
 
-As this documentation is both a demo for my documentation style and ability, and a resource to learn more about me (my :ref:`research`, writing samples, etc.), the content of this doc is a fusion of the two. Below I highlight and outline some of the most important sections of this doc:
+As this documentation is both a demo for my documentation style and ability, and a resource to learn more about me (my :ref:`research`, :ref:`writing samples <quick-links>`, etc.), the content of this doc is a fusion of the two. Below I highlight and outline some of the most important sections of this doc:
 
 * :ref:`methodology` -- an outline of how I structure my documentation and the reasoning for each of my choices/methods.
 * :ref:`install` -- a partial sample of an Installation page, intended to show my structure and formatting.
