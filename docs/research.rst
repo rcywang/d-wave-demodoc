@@ -79,7 +79,7 @@ The system (a set of qubits) begins the annealing process in the ground state of
 
 .. math::
 
-    \mathcal{H}_i = \underbrace{-\frac{A(s)}{2}\left(\sum_{i} \hat{\sigma}_{x}^{(i)}\right)}_{\text {Initial Hamiltonian }}
+    \mathcal{H}_i = \underbrace{-\frac{A(s)}{2}\left(\sum_{i} \hat{\sigma}_{x}^{(i)}\right)}_{\text {Initial Hamiltonian}}
 
 
 As it anneals, the final or **problem Hamiltonian** :math:`\mathcal{H}_{\operatorname{problem}}` is introduced. During the annealing process, the system evolves under the full Hamiltonian :math:`\mathcal{H}_{\operatorname{Ising}}`:
@@ -112,7 +112,7 @@ Similarly, low-field seeking atoms (with anti-aligned (:math:`\uparrow\downarrow
 
 In reality, both the total electronic angular momentum (:math:`L, S`) and atomic angular momentum (:math:`J, I`) are constantly changing; thus, atoms act more like a pendulum, switching between high- and low-field seeking states. Untrapped atoms do not interact with the field and fly out of the trap.
 
-All of the above (in this section) are in reference to the subfigures in :numref:`fieldseeking`.
+All the above (in this section) are in reference to the subfigures in :numref:`fieldseeking`.
 
 
 .. figure:: fieldseeking.png
@@ -126,10 +126,6 @@ All of the above (in this section) are in reference to the subfigures in :numref
 
 
 
-
-
-.. Optimization with D-Wave QPUs and MLOO
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Probabilistic Machine Learning and Surrogate Models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -218,7 +214,7 @@ Consider the following optimization problems for cold atom experiments and D-Wav
         .. math::
 
             LL(\theta) = \log(L(\theta)) = \sum_{d=1}^D \log\ p(v^{(d)};\theta)
-    * - For parameter optimization in [Ness2020]_ (not MLOOP), Adam (adaptive moment estimation) and Glorot were used. Adam merges the advantages of two popular optimization methods:
+    * - For parameter optimization in [Ness2020]_ (not M-LOOP), Adam (adaptive moment estimation) and Glorot were used. Adam merges the advantages of two popular optimization methods:
          
          1. *AdaGrad*, which handles sparse gradients, and 
          2. *RMSProp*, which handles non-stationary objectives and excels in online settings.
@@ -254,7 +250,7 @@ In a strongly magnetized vacuum, nonlinear QED interactions induce **birefringen
 
 
 .. [Mignani2019] Roberto Mignani, Andrew Shearer, Agnieszka Słowikowska, and Silvia Zane. Astronomical Polarisation from the Infrared to Gamma Rays. Springer, 2019.
-.. [Heyl2002] Jeremy S Heyl and Nir J Shaviv. Qed and the high polarization of the thermal radiation from neutronstars. Physical Review D, 66(2):023002, 2002.
+.. [Heyl2002] Jeremy S Heyl and Nir J Shaviv. Qed and the high polarization of the thermal radiation from neutron stars. Physical Review D, 66(2):023002, 2002.
 
 
 .. _adiabatic:
@@ -307,7 +303,7 @@ With vacuum birefringence, the expected polarization fraction (the degree of pol
     This is a hand-drawn picture by J.S. Heyl showing the resonance crossings (circled). Note that the frequencies on the x-axis is scaled by the cyclotron resonance :math:`\omega_B` (or :math:`\omega_c`). This image can be contrasted with :numref:`eigenspectrum` (Fig. 7 of `Annealing in Low-Energy States <https://docs.dwavesys.com/docs/latest/c_gs_2.html#annealing-in-low-energy-states>`_).
 
 
-The nonrelativistic scattering cross sections for the two polarization modes are
+The nonrelativistic scattering cross-sections for the two polarization modes are
 
  * for photons travelling *nearly perpendicular* to the magnetic field direction:
 
@@ -327,9 +323,9 @@ The nonrelativistic scattering cross sections for the two polarization modes are
         \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c-\omega)^2} + \frac{1}{2}\sin^2\theta \right)
         \end{align*}
 
-    where :math:`\sigma_T` is the Thomson scattering cross section.
+    where :math:`\sigma_T` is the Thomson scattering cross-section.
 
-As :math:`\omega\rightarrow\omega_c`, the :math:`X`-mode cross section increases, becoming larger than the :math:`O`-mode's. However, very close to the resonance where :math:`\omega\sim\omega_c`, the energy transfer from photons heats up electrons and damping effects must be taken into consideration (the equations for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}` are no longer valid).
+As :math:`\omega\rightarrow\omega_c`, the :math:`X`-mode cross-section increases, becoming larger than the :math:`O`-mode's. However, very close to the resonance where :math:`\omega\sim\omega_c`, the energy transfer from photons heats up electrons and damping effects must be taken into consideration (the equations for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}` are no longer valid).
 
 The **resonant scattering** occurs when the photon frequency (in the electron's rest frame, where scattering is nonrelativistic) equals the cyclotron frequency (:math:`\omega=\omega_c`). Looking at the above expressions for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}`, we see that for a photon travelling along and across the field, only the :math:`X`-mode photons are resonantly scattered. Radiation from the atmosphere is mostly **polarized perpendicular** (:math:`X`), and so it will remain in its (perpendicular) polarization state after the resonant scattering. If we were to 'look more closely', including geometric considerations, we find that the resonant scattering can switch the polarization states [Caiazzo2019]_. 
 
@@ -339,7 +335,7 @@ Near the cyclotron resonance (and including thermal effects), I theoretically ca
     *If* :math:`E_{\gamma} > E_{\operatorname{adiabatic}}`, *then we have a transformation of the polarization (mode-flipping from* :math:`X \rightarrow O`) *as the photon crosses the resonance.*
 
 
-What if :math:`E_{\gamma} < E_{\operatorname{adiabatic}}`? In this case, the polarization would remain perpendicular (:math:`X`). We can calulate what happens to the polarization mode as the photon crosses resonance by looking at the :ref:`adiabatic criterion <adiabaticcriterion>`.
+What if :math:`E_{\gamma} < E_{\operatorname{adiabatic}}`? In this case, the polarization would remain perpendicular (:math:`X`). We can calculate what happens to the polarization mode as the photon crosses resonance by looking at the :ref:`adiabatic criterion <adiabaticcriterion>`.
 
 
 .. _adiabaticcriterion:
@@ -347,7 +343,7 @@ What if :math:`E_{\gamma} < E_{\operatorname{adiabatic}}`? In this case, the pol
 The Adiabatic Criterion
 +++++++++++++++++++++++
 
-A birefringent medium is an anisotropic medium through which the index of refraction depends on the polarization direction of light. Consider simplest case of uniaxial birefringence, where the anisotropy is driven by a single axis and the medium is still rotationally symmetric about this 'special axis'. 
+A birefringent medium is an anisotropic medium through which the index of refraction depends on the polarization direction of light. Consider the simplest case of uniaxial birefringence, where the anisotropy is driven by a single axis and the medium is still rotationally symmetric about this 'special axis'. 
 
 As light travels through the medium, the component polarized parallel to this special axis can propagate faster (or slower) than the orthogonal component. The amplitude of the birefringent vector :math:`\hat{\mathbf{\Omega}}` is given by
 
@@ -371,7 +367,7 @@ In general, if :math:`|\hat{\mathbf{\Omega}}|` is sufficiently large, the vector
 
 This equation is known as the **adiabatic criterion**. If it holds, the polarization states evolve adiabatically, and the polarization direction will follow the direction of birefringence [Caiazzo2019]_.
 
-Notice that this adiabadicity requirement is important for **adiabatic quantum computing** as well, specifically during the annealing process.
+Notice that this adiabaticity requirement is important for **adiabatic quantum computing** as well, specifically during the annealing process.
 
 .. [Caiazzo2019] Ilaria Caiazzo. QED and X-ray polarization from neutron stars and black holes. PhD thesis, University of British Columbia, 2019.
 
@@ -462,4 +458,4 @@ MBL states have the unique ability to retain the memory of the initial state -- 
 
 .. [Khemani2017] Vedika Khemani, DN Sheng, and David A Huse. Two universality classes for the many-body localization transition.Physical review letters, 119(7):075702, 2017.
 
-.. [Levine2019] Harry Levine, Alexander Keesling, Giulia Semeghini, Ahmed Omran,Tout T Wang, Sepehr Ebadi,Hannes Bernien, Markus Greiner, Vladan Vuletić, Hannes Pichler, et al. Parallel implementation ofhigh-fidelity multiqubit gates with neutral atoms.Physical review letters, 123(17):170503, 2019.
+.. [Levine2019] Harry Levine, Alexander Keesling, Giulia Semeghini, Ahmed Omran, Tout T Wang, Sepehr Ebadi, Hannes Bernien, Markus Greiner, Vladan Vuletić, Hannes Pichler, et al. Parallel implementation of high-fidelity multiqubit gates with neutral atoms. Physical review letters, 123(17):170503, 2019.
