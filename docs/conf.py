@@ -60,7 +60,7 @@ extensions = [
    # "hoverxref.extension", #must be hosted on readtehdocs
     "numpydoc",
     "sphinx.ext.mathjax",
-    "sphinx_togglebutton",
+ #   "sphinx_togglebutton",
  #   "sphinx_panels",
 ]
 
