@@ -7,8 +7,13 @@ Changelog
 
 :Current version: 
     
-    0.0.1
+    v0.1.1
 
+
+v0.1.1
+^^^^^^
+
+* Finalized documentation for application submission
 
 v0.1.0
 ^^^^^^
