@@ -11,7 +11,7 @@ Contact
     `inquiry@dwavesys.com <mailto:inquiry@dwavesys.com>`_
 
 :Phone:
-    (778)-987-6806
+    (604)-630-1428
 
 :Address:
     | 3033 Beta Avenue
