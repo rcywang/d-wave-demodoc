@@ -19,3 +19,4 @@ dependencies:
     - matplotlib==3.4.1
     - sphinx-togglebutton==0.2.3
     - sphinx-panels==0.5.2
+    - sphinxcontrib-packages==1.0.1
