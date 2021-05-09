@@ -12,9 +12,9 @@ Hello! Welcome to my demo documentation for the `Technical Writer / Editor <http
 
 This is intended as a display of my documentation style and ability, as well as a resource to learn more about me. Below are some important sections of this doc:
 
-* :ref:`methodology` -- an outline of how I structure my documentation and the reasoning for each of my choices/methods.
-* :ref:`install` -- a partial sample of an Installation page, intended to show my structure and formatting.
-* :ref:`Additional Writing Samples <quick-links>` -- additional writing samples (including an :ref:`MLOO`), with a brief description of the purpose for each document to provide context.
+* :ref:`methodology` -- an outline of how I structure my documentation and the rationale for doing so.
+* :ref:`install` -- a partial sample of an Installation page, intended to showcase structure and formatting.
+* :ref:`Additional Writing Samples <quick-links>` -- additional writing samples accompanied by a description of the purpose for each document to provide context.
 * :ref:`research` -- a technical overview of how my research interests and experience align with the work done at D-Wave. Viewing this section is *strongly encouraged*!
 
 
