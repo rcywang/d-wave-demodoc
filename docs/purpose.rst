@@ -1,23 +1,37 @@
 Purpose
 =======
-About this doc: Go more into detail here.  
-
+This demo documentation is intended for my application to the `Technical Writer / Editor position <https://jobs.lever.co/dwavesys/063f504f-9402-4953-9429-cf14452e1436>`_ at D-Wave Systems. It is not meant for any other purpose.
 
 
 Why did I make this?
 --------------------
-* Job posting, interest in QC, documentation (link to my mini textbook), self-proclaimed LaTeX enthusiast (or put this in an About Me section under PERSONAL
-* How (went and learned)?
-* Wanted to learn confluence... time-sensitive job posting? work-in-progress?
-* Mention technical/scientific writing skills here.
+
+Last week (April 29, 2021), I found the job posting for the Technical Writer position. I decided to apply as the job description fits my interests in many ways, a few examples of which are listed below:
+
+* I enjoy technical writing and often write documents on topics in physics that interest me. An example of this is my :ref:`QDG`... which is currently at 42 pages.
+* I love to learn. I study physics in my spare time, writing technical documents and textbooks on each concept for future reference. I have many examples of such documents that I can share upon request.
+* I am interested in quantum simulations (see my page on :ref:`neutralatomsim`), especially in quantum research. In particular, I was particularly intrigued by the transverse field Ising model (TFIM) after reading D-Wave's `Phase transitions in a programmable quantum spin glass simulator <https://science.sciencemag.org/content/361/6398/162>`_  paper.
+* I have experience in Python, Markdown, **reStructuredText and Sphinx (this doc!)**, Jupyter Notebooks, Git; I am familiar with HTML and CSS. In particular, I am a self-proclaimed LaTeX enthusiast.
+
+After visiting the `Ocean documentation <https://docs.ocean.dwavesys.com/en/stable/>`_, my enthusiasm for technical writing and typesetting motivated me to create my own demo documentation using Sphinx (in my spare time over the last week)... and I had fun doing so!
+
 
 
 What does this doc contain?
 ---------------------------
-general overview of contents? set expectations (mix and match)
 
-----
+As this documentation is both a demo for my documentation style and ability, and a resource to learn more about me (my :ref:`research`, writing samples, etc.), the content of this doc is a fusion of the two. Below I highlight and outline some of the most important sections of this doc:
 
+* :ref:`methodology` -- an outline of how I structure my documentation and the reasoning for each of my choices/methods.
+* :ref:`install` -- a partial sample of an Installation page, intended to show my structure and formatting.
+* :ref:`quick-links` -- additional writing samples including an :ref:`MLOO`, with a brief description of the purpose for each document to provide context.
+* :ref:`research` -- a thorough overview of how my research interests and experience align with the work done at D-Wave.
+
+
+
+
+
+.. _methodology:
 My Documentation Methodology
 ----------------------------
 
