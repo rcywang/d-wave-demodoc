@@ -147,3 +147,69 @@ button {
   cursor: pointer;
   display: block;
 }
+
+
+/* to fix sphinx-togglebutton bug */
+
+<style>
+  details.sphinx .summary-title {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-right: 3em!important;
+  }
+  details.sphinx:hover {
+    cursor: pointer;
+  }
+  details.sphinx .summary-content {
+    cursor: default;
+  }
+  details.sphinx summary {
+    padding: 1em;
+    list-style: none;
+  }
+  /* chrome doesn't yet support list-style */
+  details.sphinx summary::-webkit-details-marker {
+    display: none;
+  }
+  details.sphinx summary:focus {
+    outline: none;
+  }
+  details.sphinx summary:hover .summary-chevron-up svg {
+    opacity: 1;
+  }
+  details.sphinx .summary-chevron-up svg {
+    opacity: 0.5;
+  }
+  details.sphinx .summary-chevron-up,
+  details.sphinx .summary-chevron-down {
+    pointer-events: none;
+    position: absolute;
+    top: 0.75em;
+    right: 1em;
+  }
+  details.sphinx .summary-chevron-up svg,
+  details.sphinx .summary-chevron-down svg {
+    display: block;
+  }
+  details.sphinx[open] .summary-chevron-up{
+    visibility: hidden;
+  }
+ </style>
+
+<details class="sphinx card">
+  <summary class="summary-title card-header bg-danger text-white">
+    Details element with custom arrow!
+    <div class="summary-chevron-up">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </summary>
+  <div class="summary-content card-body">
+    <p class="card-text">paragraph 1</p>
+    <p class="card-text">paragraph 2</p>
+  </div>
+  <div class="summary-chevron-down">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </div>
+</details>
