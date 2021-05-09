@@ -3,13 +3,6 @@
 Resume
 ======
 
-.. .. container:: center
-
-..     | **Rachel Wang**
-..     | (778)-987-6806 :math:`|` rachel.cy.wang@gmail.com
-..     | 5638 Birney Ave #208 :math:`|` V6S 0H8 :math:`|` Vancouver, BC
-
-
 
 
 Education
@@ -135,7 +128,7 @@ Relevant Courses
         +----------------------------------------------------------------+-----+
         | Conducted research with TRIUMF's TUCAN group, culminating in a thesis|
         |                                                                      |
-        | Developed a Monte Carli simulation for proton beamline 1U using      |
+        | Developed a Monte Carlo simulation for proton beamline 1U using      |
         | G4beamline/OPERA-3D/FORTRAN to improve measurement sensitivity       |
         | on the neutron electric dipole moment (nEDM)                         |
         +----------------------------------------------------------------+-----+
