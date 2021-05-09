@@ -32,6 +32,7 @@ As this documentation is both a demo for my documentation style and ability, and
 
 
 .. _methodology:
+
 My Documentation Methodology
 ----------------------------
 
