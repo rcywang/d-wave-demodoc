@@ -14,7 +14,7 @@ There are a few parallels that can be drawn between my research interests/experi
 Cold Atom Systems
 -----------------
 
-Atoms can be trapped using light, electric fields, or magnetic fields such that they are suspended in an ultra-high vacuum chamber, spatially confined and isolated from the walls. In a **3D magneto-optical trap (MOT)** consisting of 3 pairs of counter-propagating beams, atoms are slowed down via **laser cooling** and trapped via a pair of concentric coils in an *anti-Helmholtz* configuration spaced one coil radius apart. Laser cooling can be thought of as "**momentum trapping**" as it depends on velocity (and not position). For "**position trapping**", the trapping force is provided by a **spatially-varying magnetic field**. At the centre of the MOT, the combination of the two results in a **trapping potential**, with trap depth :math:`U_{\operatorname{trap}}=\frac{1}{2}mv_e^2`, where :math:`v_e` is the minimum trap escape speed. The depth is controlled by the parameters of the confining fields (e.g. magnetic field gradient).
+Atoms can be trapped using light, electric fields, or magnetic fields such that they are suspended in an ultra-high vacuum chamber, spatially confined and isolated from the walls. In a **3D magneto-optical trap (MOT)** consisting of 3 pairs of counter-propagating beams, atoms are slowed down via **laser cooling** and trapped via a pair of concentric coils in an *anti-Helmholtz* configuration spaced one coil radius apart. Laser cooling can be thought of as "**momentum trapping**" as it depends on velocity. For "**position trapping**", the trapping force is provided by a **spatially-varying magnetic field**. At the centre of the MOT, the combination of the two results in a **trapping potential**, with trap depth :math:`U_{\operatorname{trap}}=\frac{1}{2}mv_e^2` and minimum trap escape speed :math:`v_e`. The depth is controlled by the parameters of the confining fields (e.g. the magnetic field gradient).
 
 In addition to the MOT is the **magnetic trap (MT)**, which is bad at cooling and trapping atoms (thus, the need for the MOT). A quadrupole can be formed using the same coils as for the MOT, though this time with a higher current to produce a greater magnetic field gradient; the laser light is also turned off. For a **step-by-step description of the experimental sequence**, see the dropdown menu below.
 
@@ -45,7 +45,7 @@ In addition to the MOT is the **magnetic trap (MT)**, which is bad at cooling an
 The Double-Potential Well and Evaporative Cooling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Evaporative cooling** can be understood by analogy to *cooling a cup of coffee by blowing on it*. The speed of atoms in an atomic gas can be described by the `Maxwell-Boltzmann distribution <https://en.wikipedia.org/wiki/Maxwell%E2%80%93Boltzmann_distribution>`_; the most energetic atoms occupy the high-energy tail of the distribution. By removing high-energy atoms, the remaining atoms re-equilibrate through elastic collisions, lowering the temperature of the sample. In hot coffee, the most energetic particles escape as vapour, taking with them their share of energy and thus temperature.
+**Evaporative cooling** can be understood by analogy to *cooling a cup of coffee by blowing on it*. The speed of atoms in an atomic gas can be described by the `Maxwell-Boltzmann distribution <https://en.wikipedia.org/wiki/Maxwell%E2%80%93Boltzmann_distribution>`_; the most energetic atoms occupy the high-energy tail of the distribution. By removing the high-energy atoms, the remaining atoms re-equilibrate through elastic collisions, lowering the temperature of the sample. In hot coffee, the most energetic particles escape as vapour, taking with them their share of energy and thus temperature.
 
 For producing Bose-Einstein Condensates (BECs), evaporative cooling can be used to cool trapped atoms (:numref:`coolramp`). The walls of the trapping potential can be lowered by **tuning parameters** such as the magnetic field strength or laser frequency.
 
@@ -75,14 +75,14 @@ Annealing and Field-Seeking States
 .. role:: latex(code)
    :language: latex
 
-The system (a set of qubits) begins the annealing process in the ground state of the **initial Hamiltonian** :math:`\mathcal{H}_i`. For D-Wave, this looks like
+The system (a set of qubits) begins the annealing process in the ground state of the **initial Hamiltonian** :math:`\mathcal{H}_{\operatorname{initial}}`. For D-Wave, this looks like
 
 .. math::
 
     \mathcal{H}_i = \underbrace{-\frac{A(s)}{2}\left(\sum_{i} \hat{\sigma}_{x}^{(i)}\right)}_{\text {Initial Hamiltonian}}
 
 
-As it anneals, the final or **problem Hamiltonian** :math:`\mathcal{H}_{\operatorname{problem}}` is introduced. During the annealing process, the system evolves under the full Hamiltonian :math:`\mathcal{H}_{\operatorname{Ising}}`:
+As it anneals, the final or **problem Hamiltonian** :math:`\mathcal{H}_{\operatorname{final}}` is introduced. During the annealing process, the system evolves under the full Hamiltonian :math:`\mathcal{H}_{\operatorname{Ising}}`:
 
 .. math::
 
@@ -98,21 +98,21 @@ At the end of the anneal, the system will be in an eigenstate of the problem Ham
 We can compare the following two concepts:
 
     * The spin state of a qubit minimizing its energy by aligning with the external magnetic field (**quantum annealing**).
-    * The magnetic moments of atoms will minimize their energy by moving to regions of higher/lower field strengths, depending on its alignment (:math:`\uparrow\uparrow` and :math:`\downarrow\uparrow`, respectively) (**atom trapping**).
+    * The magnetic moments of atoms minimizing their energy by moving to regions of higher/lower field strengths, depending on their alignment (:math:`\uparrow\uparrow` and :math:`\downarrow\uparrow`, respectively) (**atom trapping**).
 
 
 
-High- and Low-Field Seeking States
-++++++++++++++++++++++++++++++++++
+High- and Low-Field Seeking Atoms
++++++++++++++++++++++++++++++++++
 
-Consider atoms in a MT with a magnetic field gradient superimposed onto a uniform field. Atoms want to occupy the 'new' lowest energy states (like the qubit in a bias field). Atoms whose magnetic moments are aligned (:math:`\uparrow\uparrow`) with the field will have lower energies in a higher field [#foot4]_. 
+Consider atoms in a MT with a magnetic field gradient superimposed onto a uniform field. Atoms want to occupy the 'new' **lowest energy states** (like the qubit in a bias field). Atoms whose magnetic moments are aligned (:math:`\uparrow\uparrow`) with the field will have lower energies in a higher field [#foot4]_. 
 
 Similarly, low-field seeking atoms (with anti-aligned (:math:`\uparrow\downarrow`) magnetic moments) will tend toward regions with lower field strength [#foot5]_.
 
 
 In reality, both the total electronic angular momentum (:math:`L, S`) and atomic angular momentum (:math:`J, I`) are constantly changing; thus, atoms act more like a pendulum, switching between high- and low-field seeking states. Untrapped atoms do not interact with the field and fly out of the trap.
 
-All the above (in this section) are in reference to the subfigures in :numref:`fieldseeking`.
+All the above (on high-/low-field seeking atoms) are in reference to the subfigures in :numref:`fieldseeking`.
 
 
 .. figure:: fieldseeking.png
@@ -136,10 +136,11 @@ For high-precision and time-limited quantum gas experiments, optimizing experime
 Probabilistic models
     | The model infers a distribution in **function space** -- rather than over individual (function) parameters -- and updates the hypothesized prior distribution based on new data. The updated posterior distribution, computed from both the prior and data/observation, is used to choose the next sampling point [#foot6]_.
     | 
-    |   *prior* -- the prior probability distribution is chosen before observing the data.
-    |   *posterior distribution* -- the posterior probability distribution is the updated distribution over possible functions that narrows with each observation (defined after observing the data).
+    |   - *prior* -- the prior probability distribution is chosen before observing the data.
+    |
+    |   - *posterior distribution* -- the posterior probability distribution is the updated distribution over possible functions that narrows with each observation (defined after observing the data).
 
-.. [#foot6] In **Gaussian Processes (GP)**, each point is treated as a random variable and the distribution of a GP is the joint distribution over these functions, with a continuous domain. GPs are favoured for their strong generalizability, tractability, and flexible non-parametric inference, making them suitable for treating complex regression problems such as small samples and nonlinearities.
+.. [#foot6] In a Gaussian Process (GP), each point is treated as a random variable and the distribution of a GP is the joint distribution over these functions, with a continuous domain. GPs are favoured for their strong generalizability, tractability, and flexible non-parametric inference, making them suitable for treating complex regression problems such as small samples and nonlinearities.
 
 
 .. _comparison:
@@ -153,7 +154,7 @@ Consider the following optimization problems for cold atom experiments and D-Wav
     2. Discrete optimization of objective functions -- the Ising model and quadratic unconstrained binary optimization (QUBO) (**D-Wave solvers**)
 
 
-.. list-table:: Comparing optimization strategies for discrete and continuous distribution models used by the MLOO package and D-Wave solvers.
+.. list-table:: Comparing optimization strategies for continuous and discrete distribution models used by the MLOO package and D-Wave solvers.
     :header-rows: 1
     :widths: auto
     :align: center
@@ -166,23 +167,23 @@ Consider the following optimization problems for cold atom experiments and D-Wav
       - A point in this space is represented by a vector :math:`X\in \{0,1\}`.
     * - We can represent :math:`\mathbf{X}` as a column vector, :math:`\mathbf{X}^T=[x_1, x_2 \ldots, x_N]`, where :math:`\mathbf{x}_n` is the :math:`n^{th}` set of experimental settings.
       - We can represent :math:`X` as a column vector, :math:`X^T=[x_1, x_2\ldots, x_N]`, where :math:`x_n` is the state of the :math:`n^{th}` binary random variable in :math:`X`.
-    * - The random variables :math:`x_n` are continuous.
-      - The random variables :math:`x_n` are discrete.
-    * - The  normal (Gaussian) distribution models :math:`\mathcal{C}(\mathbf{X})` (cost function). In the MLOO approach, an estimate (^) of the stochastic process given our observations :math:`\mathcal{\hat{C}}(\mathbf{X}|\mathcal{O})` is used to determine what parameters to try next.
+    * - The random variables :math:`x_n` are *continuous*.
+      - The random variables :math:`x_n` are *discrete*.
+    * - The  normal (Gaussian) distribution models the cost function :math:`\mathcal{C}(\mathbf{X})`. In the MLOO approach, an estimate (denoted by ^) of the stochastic process given our observations :math:`\mathcal{\hat{C}}(\mathbf{X}|\mathcal{O})`, is used to determine what parameters to try next.
       - A Boltzmann distribution defines the probability for each possible state that :math:`X` can take using (assuming :math:`\beta=\frac{1}{k_BT}=1`):
 
         .. math::
 
             p(X) = \frac{1}{Z}\exp \left(-E(X;\theta)\right)
 
-    * - The *biased* cost function, parameterized by :math:`b`, is
+    * - The *biased* cost function, *parameterized by* :math:`b`, is
      
         .. math::
 
             B_{\hat{C}}(\mathbf{X}) \equiv b M_{\hat{C}}(\mathbf{X})-(1-b) \Sigma_{\hat{C}}^{2} 
 
         where :math:`b` is linearly increased from :math:`0` to :math:`1` in a cycle to sweep between the 'scientist' (:math:`b=0`) and 'optimizer' (:math:`b=1`) strategies. :math:`M_{\hat{C}}` and :math:`\Sigma_{\hat{C}}^{2}` are as defined in [Wigley2016]_.
-      - The partition function contains :math:`E(X;\theta)` which is parameterized by :math:`\theta` and contains biases:
+      - The partition function contains :math:`E(X;\theta)` which is *parameterized by* :math:`\theta` and contains *biases*:
 
         .. math::
 
@@ -194,30 +195,30 @@ Consider the following optimization problems for cold atom experiments and D-Wav
 
             K\left(\mathbf{X}_{i}, \mathbf{X}_{j}\right)=\exp \left\{-\frac{1}{2} \sum_{k=1}^{M}\left(\mathbf{X}_{i}[k]-\mathbf{X}_{j}[k]\right)^{2} / h_{k}^{2}\right\}
 
-        where :math:`\mathbf{X}_i[k]` is the :math:`k^{th}` element in the vector :math:`\mathbf{X}_i` and :math:`h_k` belongs to a set :math:`H=(h_1,\ldots,h_M)` of correlation lengths (hyperparameters to be fitted online). See my :ref:`MLOO` for a more detailed description of online optimization strategies for forming Bose-Einstein condensates.
-      - The energy function :math:`E(X;\theta)` is represented via a quadratic form :math:`X^TQX`, in which matrix :math:`Q_{\theta}` is defined by biases :math:`q_i` and correlation weights :math:`q_{i,j}`. Then, :math:`Q` encapsulates the parameters of the energy function:
+        where :math:`\mathbf{X}_i[k]` is the :math:`k^{th}` element in the vector :math:`\mathbf{X}_i` and :math:`h_k` belongs to a set :math:`H=(h_1,\ldots,h_M)` of *correlation lengths* (hyperparameters to be fitted online). See my :ref:`MLOO` for a more detailed description of online optimization strategies for forming Bose-Einstein condensates.
+      - The energy function :math:`E(X;\theta)` is represented via a quadratic form :math:`X^TQX`, in which matrix :math:`Q_{\theta}` is defined by biases :math:`q_i` and *correlation weights* :math:`q_{i,j}`. Then, :math:`Q` encapsulates the parameters of the energy function:
 
         .. math::
 
             E(X) = X^TQX = \sum_{i<j}q_{i,j}X_iX_j + \sum_i q_{i,i}x_i
 
         See `Boltzmann Distribution <https://docs.dwavesys.com/docs/latest/c_ml_1.html#boltzmann-distribution>`_ for a more detailed description of online optimization strategies for forming Bose-Einstein condensates for more details.
-    * - The standard approach is to fit :math:`H` with maximum likelihood estimation. The likelihood of parameters :math:`H` given observations :math:`\mathcal{O}` is then:
+    * - The standard approach is to fit :math:`H` with *maximum likelihood estimation (MLE)*. The likelihood of parameters :math:`H` given observations :math:`\mathcal{O}` is then:
     
         .. math::
 
             L(H|\mathcal{O}) \qquad \text{and}\ \  w_i=L_i \sum_{i=1}^p L_i
 
         where :math:`w_i` are the relative weights for the hyperparameters.
-      - The standard approach to fit :math:`E` is to maximize the log likelihood (:math:`LL`):
+      - The standard approach to fit :math:`E` is to *maximize the log likelihood* (:math:`LL`):
 
         .. math::
 
             LL(\theta) = \log(L(\theta)) = \sum_{d=1}^D \log\ p(v^{(d)};\theta)
-    * - For parameter optimization in [Ness2020]_ (not M-LOOP), Adam (adaptive moment estimation) and Glorot were used. Adam merges the advantages of two popular optimization methods:
+    * - For parameter optimization in [Ness2020]_ (not M-LOOP), `Adam <https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam>`_ (adaptive moment estimation) and Glorot (weight initialization) were used. Adam merges the advantages of two popular optimization methods:
          
-         1. *AdaGrad*, which handles sparse gradients, and 
-         2. *RMSProp*, which handles non-stationary objectives and excels in online settings.
+         1. `AdaGrad <https://en.wikipedia.org/wiki/Stochastic_gradient_descent#AdaGrad>`_, which handles sparse gradients, and 
+         2. `RMSProp <https://en.wikipedia.org/wiki/Stochastic_gradient_descent#RMSProp>`_, which handles non-stationary objectives and excels in online settings.
       - Equivalent to maximizing :math:`LL` is minimizing the negative log likelihood (:math:`NLL`) of the data. The *gradient descent* method is used to minimize :math:`NLL(\theta)`:
         
          1. From an initial guess for :math:`\theta`, calculate the gradient and take a step in that direction.
@@ -243,7 +244,7 @@ Consider the following optimization problems for cold atom experiments and D-Wav
 High-Energy Astrophysics 
 ------------------------
 
-In a strongly magnetized vacuum, nonlinear QED interactions induce **birefringence**; effectively, the propagation speed of photons in the two linear polarization modes (O- and X-modes) differ under these conditions [Mignani2019]_. Vacuum birefringence influences the adiabatic evolution of highly polarized thermal emission of neutron stars (NSs) in two ways:
+In a strongly magnetized vacuum, nonlinear QED interactions induce **birefringence**; effectively, the propagation speed of photons in the two linear polarization modes (O- and X-modes) differ under these conditions [Mignani2019]_. **Vacuum birefringence** influences the adiabatic evolution of highly polarized thermal emission of neutron stars (NSs) in two ways:
 
     1. *Polarization mode decoupling in NS magnetospheres*: polarization vectors tend to align with the varying magnetic field orientation of each surface element -- that is, up to some large limiting radius away from the surface, after which the polarization becomes '**frozen**' [Heyl2002]_. The result is a large observed net polarization, rather than the *a priori* expected depolarization, for the integrated light.
     2. *Mode conversion in NS atmospheres*: at a particular frequency, an X-mode photon may be converted into the O-mode (or O :math:`\rightarrow` X) as it traverses a "**vacuum resonance**" arising from competing **vacuum** and **plasma birefringent** effects. This produces a unique energy-dependent polarization signature, determined by the plasma density and magnetic field strength. 
@@ -267,7 +268,7 @@ Predominantly, two factors can cause the system to jump (or traverse the minimum
     1. Thermal fluctuations
     2. Annealing runs **too quickly**
 
-To avoid interference from the environment, the annealing process evolves the Hamiltonian slowly as an **adiabatic process**. 
+To avoid interference from the environment, the annealing process **evolves the Hamiltonian slowly** as an **adiabatic process**. 
 
 
 .. dropdown:: About the energy eigenspectrum
@@ -327,7 +328,7 @@ The nonrelativistic scattering cross-sections for the two polarization modes are
 
 As :math:`\omega\rightarrow\omega_c`, the :math:`X`-mode cross-section increases, becoming larger than the :math:`O`-mode's. However, very close to the resonance where :math:`\omega\sim\omega_c`, the energy transfer from photons heats up electrons and damping effects must be taken into consideration (the equations for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}` are no longer valid).
 
-The **resonant scattering** occurs when the photon frequency (in the electron's rest frame, where scattering is nonrelativistic) equals the cyclotron frequency (:math:`\omega=\omega_c`). Looking at the above expressions for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}`, we see that for a photon travelling along and across the field, only the :math:`X`-mode photons are resonantly scattered. Radiation from the atmosphere is mostly **polarized perpendicular** (:math:`X`), and so it will remain in its (perpendicular) polarization state after the resonant scattering. If we were to 'look more closely', including geometric considerations, we find that the resonant scattering can switch the polarization states [Caiazzo2019]_. 
+The **resonant scattering** occurs when the photon frequency (in the electron's rest frame, where scattering is nonrelativistic) equals the **cyclotron frequency** (:math:`\omega=\omega_c`). Looking at the above expressions for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}`, we see that for a photon travelling along and across the field, only the :math:`X`-mode photons are resonantly scattered. Radiation from the atmosphere is mostly **polarized perpendicular** (:math:`X`), and so it will remain in its (perpendicular) polarization state after the resonant scattering. If we were to look more closely, including geometric considerations, we find that the resonant scattering can switch the polarization states [Caiazzo2019]_. 
 
 
 Near the cyclotron resonance (and including thermal effects), I theoretically calculated a **critical photon energy** :math:`E_{\gamma}^{\operatorname{crit}}`, above which the evolution is adiabatic. This leads us to the following conclusion:
@@ -343,9 +344,9 @@ What if :math:`E_{\gamma} < E_{\operatorname{adiabatic}}`? In this case, the pol
 The Adiabatic Criterion
 +++++++++++++++++++++++
 
-A birefringent medium is an anisotropic medium through which the index of refraction depends on the polarization direction of light. Consider the simplest case of uniaxial birefringence, where the anisotropy is driven by a single axis and the medium is still rotationally symmetric about this 'special axis'. 
+A birefringent medium is an anisotropic medium through which the **index of refraction** depends on the polarization direction of light. Consider the simplest case of uniaxial birefringence, where the anisotropy is driven by a single axis and the medium is still rotationally symmetric about this 'special axis'. 
 
-As light travels through the medium, the component polarized parallel to this special axis can propagate faster (or slower) than the orthogonal component. The amplitude of the birefringent vector :math:`\hat{\mathbf{\Omega}}` is given by
+As light travels through the medium, the component polarized parallel to this special axis can propagate faster (or slower) than the orthogonal component. The amplitude of the **birefringent vector** :math:`\hat{\mathbf{\Omega}}` is given by
 
 .. math::
 
@@ -359,13 +360,13 @@ where :math:`k_0` is the wavenumber of radiation in the vacuum. The change in th
 
 where :math:`\lambda` measures the mean free path of the photon in the medium [Caiazzo2019]_. 
 
-In general, if :math:`|\hat{\mathbf{\Omega}}|` is sufficiently large, the vector :math:`\mathbf{s}` will circle the direction of :math:`\hat{\mathbf{\Omega}}`, even when :math:`\hat{\mathbf{\Omega}}` changes direction and magnitude -- if it does so sufficiently slowly. Specifically, if the initial polarization is parallel to :math:`\hat{\mathbf{\Omega}}`, the polarization state will remain nearly parallel to :math:`\hat{\mathbf{\Omega}}` as long as
+In general, if :math:`|\hat{\mathbf{\Omega}}|` is sufficiently large, the vector :math:`\mathbf{s}` will circle the direction of :math:`\hat{\mathbf{\Omega}}`, even when :math:`\hat{\mathbf{\Omega}}` changes direction and magnitude -- if it does so **sufficiently slowly**. Specifically, if the initial polarization is parallel to :math:`\hat{\mathbf{\Omega}}`, the polarization state will remain nearly parallel to :math:`\hat{\mathbf{\Omega}}` as long as
 
 .. math::
 
     \left| \hat{\Omega} \left(\frac{d\ln |\hat{\Omega}|}{d\lambda} \right)^{-1} \right| \geq 0.5
 
-This equation is known as the **adiabatic criterion**. If it holds, the polarization states evolve adiabatically, and the polarization direction will follow the direction of birefringence [Caiazzo2019]_.
+This equation is known as the **adiabatic criterion**. If it holds, the **polarization states evolve adiabatically**, and the polarization direction will follow the direction of birefringence [Caiazzo2019]_.
 
 Notice that this adiabaticity requirement is important for **adiabatic quantum computing** as well, specifically during the annealing process.
 
@@ -453,7 +454,7 @@ Universality is a prediction of the **renormalization group theory** of phase tr
 Neutral Atom Systems as Quantum Simulators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MBL states have the unique ability to retain the memory of the initial state -- an entanglement property that naturally lends itself to storing quantum information. For achieving scalable universal quantum computers (QCs), we look to neutral atom systems. One solution to overcoming challenges with QCs (e.g. crosstalk and low-fidelity gates) is to encode in the *hyperfine states* of optically trapped neutral atoms such as rubidium. Multi-qubit gates are mediated by exciting atoms to strongly interacting Rydberg states [Levine2019]_.
+MBL states have the unique ability to retain the memory of the initial state -- an entanglement property that naturally lends itself to storing quantum information. For achieving **scalable universal quantum computers** (QCs), we look to neutral atom systems. One solution to overcoming challenges with QCs (e.g. crosstalk and low-fidelity gates) is to encode in the *hyperfine states* of optically trapped neutral atoms such as rubidium. Multi-qubit gates are mediated by exciting atoms to strongly interacting Rydberg states [Levine2019]_.
 
 
 .. [Khemani2017] Vedika Khemani, DN Sheng, and David A Huse. Two universality classes for the many-body localization transition.Physical review letters, 119(7):075702, 2017.
