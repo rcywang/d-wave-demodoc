@@ -2,15 +2,15 @@
 
 ML Review Paper
 ===============
-As someone who is interested -- but by no means an expert -- in machine learning, I decided to enter the *Spectra Review Paper competition* on cutting-edge techniques in machine learning (ML). I was inspired by a paper [Wigley2016]_ on the use of ML **online optimization** in the production of Bose-Einstein Condensates (BECs), as my graduate research focus is on cold-atom experiments [#foot1]_. The benefit of entering the competition was two-fold:
+As someone who is interested -- but by no means an expert -- in machine learning, I decided to enter the *Spectra Review Paper competition* on cutting-edge techniques in machine learning (ML). I was inspired by a paper [Wigley2016]_ on the use of ML **online optimization** (MLOO) in the production of Bose-Einstein Condensates (BECs), as my graduate research focus is on cold-atom experiments [#foot1]_. The benefit of entering the competition was two-fold:
 
-    1. In researching the techniques and applications of ML in cold-atom experiments, I learned about various *online optimization* schemes that search for the optimal experimental settings in real-time (or *online*). Perhaps most importantly, I reviewed optimizers (e.g. Nelder-Mead) and optimization methods (e.g. Adam, AdaGrad, RMSProp, etc.) -- both of which are highly relevant for the efficient production of Bose-Einstein Condensates (BECs). In the context of cold-atom experiments, I compared various optimization strategies, using properties such as the convergence rate and the sample size/quality to judge performance.
-    2. The two methods I reviewed in depth -- ML online optimization and **single-shot absorption imaging** [Ness2020]_ -- are quite different in their approach. The **Machine-Learning Online Optimization Package (M-LOOP)** is focused on the apparatus itself, using Bayesian optimization to search for the optimal experimental settings. In contrast, the goal of single-shot absorption imaging is to improve the signal-to-noise ratio (SNR) after the atomic cloud has been produced. Although this particular imaging sequence does not employ online optimization, the routine can easily be extended to a continuously updated model.
+    1. In researching the techniques and applications of ML in cold atom experiments, I learned about various *online optimization* schemes that search for the optimal experimental settings in real time (or *online*). I reviewed optimizers (e.g. Nelder-Mead), various approaches (e.g. differential evolution, GP regression, deep learning, etc.), and optimization algorithms (e.g. Adam, AdaGrad, RMSProp, etc.) -- all of which are highly relevant for the efficient production of Bose-Einstein Condensates (BECs). In the context of cold atom experiments, I compared various optimization strategies, using properties such as convergence rates and sample size/quality to judge performance.
+    2. The two methods I reviewed in depth -- online optimization and **single-shot absorption imaging** [Ness2020]_ -- are quite different in their approach. The **Machine-Learning Online Optimization Package (M-LOOP)** is focused on the apparatus itself, using Bayesian optimization to search for the optimal experimental settings. In contrast, the goal of single-shot absorption imaging is to improve the signal-to-noise ratio (SNR) after the atomic cloud has been produced. Although this particular imaging sequence does not employ online optimization, the routine can easily be extended to a continuously updated model.
 
 
 .. tip::
 
-    The Read the Docs page for the Machine-Learning Online Optimization Package can be found `here <https://m-loop.readthedocs.io/en/stable/>`_.
+    The Read the Docs page for the Machine-Learning Online Optimization Package (M-LOOP) can be found `here <https://m-loop.readthedocs.io/en/stable/>`_.
 
 .. Download my review paper: :download:`MLOO for Cold-atom Experiments <_static/PDFs/MLOOpaper_RachelWang.pdf>`
 
@@ -36,12 +36,6 @@ See :ref:`competition rules <about-competition>` below.
 Machine-learning online optimization (MLOO) for cold-atom experiments
 *********************************************************************
 
-.. |link_MLOO|
-
-.. .. |link_MLOO| raw:: html
-
-..     <a href="https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments"><h3>Machine-learning online optimization (MLOO) for cold-atom experiments</h3></a>
-
 .. tip:: 
     
     You can also view my ML review paper on the `Spectra.pub <https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments>`_ website.
@@ -65,7 +59,7 @@ About the Spectra Competition
 *****************************
 
 
-Mathpix is a tool for extracting text/equations from images and documents, making typing LaTeX documents faster and less tedious. The core technology of `Mathpix Snip <https://mathpix.com/>`_, the consumer app, is a publicly available API `MathpixOCR <https://mathpix.com/ocr>`_ for developers. Recently (March 2021), they announced the Spectra Review Paper Competition with the aim of providing a platform, Spectra, presenting ML content to researchers/practitioners in HTML. 
+Mathpix is a tool for extracting text/equations from images and documents, making typing LaTeX documents faster and less tedious. The core technology of `Mathpix Snip <https://mathpix.com/>`_, the consumer app, is a publicly available API `MathpixOCR <https://mathpix.com/ocr>`_ for developers. Recently (March 2021), they announced the *Spectra Review Paper Competition* with the aim of providing a platform, `Spectra <https://spectra.pub/>`_, presenting ML content to researchers/practitioners in HTML. 
 
 
 .. _criteria:
