@@ -18,7 +18,7 @@ Education
         | University of British Columbia (UBC)                                  | *Vancouver, BC* |
         +-----------------------------------------------------------------------+-----------------+
 
-        -  *Distinction* – designation for students with an average of ≥85% on 300- and 400-level program-specific courses
+        -  *With Distinction* – designation for students with an average of ≥85% in 300- and 400-level program-specific courses
 
         -  Dean’s Honours List (2018-2019) – offered to students promoted to 2nd/3rd/4th year with a standing of 80%+
     
@@ -41,9 +41,9 @@ Experience
         | *Independent (Canadian Association of Physicists)*|     *Remote*    |
         +---------------------------------------------------+-----------------+
         
-        - Reviewed a series of draft publications discussing the coordinate singularity of the Schwarzschild metric and alternative coordinate systems/transforms and other metrics
+        - Reviewed a series of draft publications discussing the coordinate singularity of the Schwarzschild metric and alternative coordinate systems/transforms and metrics
         
-        - Suggested improvements for accuracy (assumptions, methods, and conclusions), relevancy of content, and style of scientific/technical writing
+        - Suggested improvements for accuracy (in assumptions, methods, and conclusions), relevancy of content, and style of scientific/technical writing
 
     -
 
@@ -69,7 +69,7 @@ Experience
  
         -  Investigated the competing effects of QED/vacuum and plasma birefringence on X-ray polarization at plasma, vacuum, and cyclotron resonances through numerical (Python) and analytical methods
         
-        -  Findings will assist in interpreting data from the upcoming IXPE (Imaging X-ray Polarimetry Explorer) mission
+        -  Findings will assist in interpreting data from the upcoming `IXPE (Imaging X-ray Polarimetry Explorer) <https://ixpe.msfc.nasa.gov/>`_ mission
     
     -  
     
@@ -123,15 +123,15 @@ Relevant Courses
             
     -  
 
-        +----------------------------------------------------------------+-----+
-        | **PHYS 449 -- Honours Thesis**                                 | 89% |
-        +----------------------------------------------------------------+-----+
-        | Conducted research with TRIUMF's TUCAN group, culminating in a thesis|
-        |                                                                      |
-        | Developed a Monte Carlo simulation for proton beamline 1U using      |
-        | G4beamline/OPERA-3D/FORTRAN to improve measurement sensitivity       |
-        | on the neutron electric dipole moment (nEDM)                         |
-        +----------------------------------------------------------------+-----+
+        +----------------------------------------------------------------+------+
+        | **PHYS 449 -- Honours Thesis**                                 | 89%  |
+        +----------------------------------------------------------------+------+
+        | Conducted research with TRIUMF's TUCAN group, culminating in a thesis;|
+        |                                                                       |
+        | Developed a Monte Carlo simulation for proton beamline 1U using       |
+        | G4beamline/OPERA-3D/FORTRAN to improve measurement sensitivity        |
+        | on the neutron electric dipole moment (nEDM)                          |
+        +----------------------------------------------------------------+------+
 
 
     -  
@@ -162,14 +162,14 @@ Relevant Courses
 Technical Skills
 ++++++++++++++++
  
-:Programming: | Sphinx, reStructuredText (reST), Markdown, CSS/HTML (*familiar*), Python, MATLAB/Octave, FORTRAN, Mathematica, UNIX/Linux, G4beamline/Geant4
+:Programming: | Sphinx, reStructuredText (reST), Markdown, Python, CSS/HTML (*familiar*), MATLAB/Octave, FORTRAN, Mathematica, UNIX/Linux, `G4beamline <http://www.muonsinternal.com/muons3/G4beamline>`_ (part of CERN's Geant4 toolkit)
 
               | **Additionally**: Jira/Confluence (*working on it...*)
 
 
 :Certifications: | Emergency & Standard First Aid (2020)
                  | Basic Radiation Protection Training (equipped to operate in nuclear facilities; 2018)
-                 | Cryogenics Safety Training (liquefied gases; 2018)
+                 | Cryogenics Safety Training (liquified gases; 2018)
                  | WHMIS (2018)
                  | UBC Lab & Chemical Safety (2017)
                     
