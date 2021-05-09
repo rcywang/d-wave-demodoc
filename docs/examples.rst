@@ -1,8 +1,9 @@
 Examples
 ========
 
-This page would have links to code examples like `D-Wave Examples <https://github.com/dwave-examples>`_ and a concise accompanying description. Instead of mirroring the content from the Ocean Documentation Examples, I will only include (some) titles and one example (link) for each.
+This page would have links to code examples like `D-Wave Examples <https://github.com/dwave-examples>`_ and a concise accompanying description. Instead of mirroring the content from the `Ocean Documentation Examples <https://github.com/dwave-examples>`_, I will only include some titles and link to one example for each.
 
+----
 
 Beginner-Level Examples: Hybrid Computing
 -----------------------------------------
