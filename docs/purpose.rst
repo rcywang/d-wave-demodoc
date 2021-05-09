@@ -29,8 +29,6 @@ As this documentation is both a demo for my documentation style and ability, and
 
 
 
-
-
 .. _methodology:
 
 My Documentation Methodology
@@ -75,9 +73,6 @@ Though it is tempting to include *everything* in documentation, including too mu
 * **Support best practises** -- focus on what has been proven functional and avoid including practises that break conventions.
 * **Is 'X' content necessary?** -- if not, don't include it. If it may be semi-relevant, users can be redirected to the right communication channel.
 * **Does 'X' enrich the content/product? Does it have value?** -- documentation should be treated as part of the product, so content should be tailored accordingly.
-
-
-
 
 
 Basic Structure
