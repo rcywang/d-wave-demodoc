@@ -9,7 +9,6 @@ This section uses the `Install Ocean Tools <https://docs.ocean.dwavesys.com/en/s
 
 The Ocean software is a suite of tools D-Wave Systems provides on the D-Wave GitHub repository for solving hard problems with quantum computers. This section explains how to install Ocean software.
 
-.. https://docs.ocean.dwavesys.com/en/stable/getting_started.html
 
 * `Sign up <https://cloud.dwavesys.com/leap/login/?next=/leap/>`_ for Leap
 
@@ -26,7 +25,7 @@ Ocean software is supported on the following operating systems:
 
 * Linux
 * Windows (tested on 64-bit Windows 8, 10)
-* Mac (tested on mac OS X 10.13)
+* Mac (tested on Mac OS X 10.13)
 
 A :ref:`Python environment <venv>` is required. Supported versions include:
 
@@ -42,7 +41,7 @@ A :ref:`Python environment <venv>` is required. Supported versions include:
 Python Virtual Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is recommended that you work in a `virtual enviornment <https://virtualenv.pypa.io/en/stable/>`_ (``venv``)
+It is recommended that you work in a `virtual environment <https://virtualenv.pypa.io/en/stable/>`_ (``venv``)
 
 1. `Download Python <https://www.python.org/downloads/>`_ (≥ version 3.5) onto your local machine.
 
@@ -78,7 +77,7 @@ It is recommended that you work in a `virtual enviornment <https://virtualenv.py
 
 .. tip::
 
-    | For `Anaconda <https://www.anaconda.com/>`_ users, activation looks like ``conda activate your_venv``,where ``your_env`` is the name of your virtual environment (in this case, ``ocean``).
+    | For `Anaconda <https://www.anaconda.com/>`_ users, activation looks like ``conda activate your_venv``, where ``your_env`` is the name of your virtual environment (in this case, ``ocean``).
     | On Windows, you might use the ``Scripts\activate`` command instead.
 
 Your machine is now ready to install Ocean software. Learn how to :ref:`venvsetup`.
@@ -151,17 +150,11 @@ If you want to add packages at a later time, you can use the ``dwave install`` c
       -v, --verbose  Increase output verbosity
       --help         Show this message and exit.
 
-Both the interactive ``dwave setup`` and ``dwave install`` commands describe the tools and enable you to select which if any to install.
+Both the interactive ``dwave setup`` and ``dwave install`` commands describe the tools and enable you to select which packages to install.
 
 
 Most Ocean tools may require that you configure a default `solver <https://docs.ocean.dwavesys.com/en/stable/concepts/index.html#term-Solver>`_. For the next steps in setting up your environment for D-Wave solvers, see the :ref:`Configuring Access to D-Wave Solvers <config>` page.
 
-
-.. Documentation
-.. -------------
-
-.. * Access the `Ocean documentation <https://docs.ocean.dwavesys.com/en/stable/>`_
-.. * Access our `Technical Support <contribute>`_
 
 
 License
@@ -181,14 +174,3 @@ A list of non-open-source packages that require end-user license agreements, whi
 * link to EULA 2
 * EULA 3
 * etc.
-
-
-
-
-
-.. .. include:: /config.rst
-..     :start-after: .. include_after_this
-
-
-
-
