@@ -60,7 +60,7 @@ extensions = [
    # "hoverxref.extension", #must be hosted on readtehdocs
     "numpydoc",
     "sphinx.ext.mathjax",
- #   "sphinx_togglebutton",
+    "sphinx_togglebutton",
  #   "sphinx_panels",
 ]
 
@@ -74,7 +74,6 @@ autosummary_generate = True
 napoleon_numpy_docstring = True
 napoleon_include_init_with_doc = False
 #napoleon_use_admonition_for_references = False
-autosummary_generate = True
 autosummary_imported_members = True
 numpydoc_show_class_members = False
 
@@ -96,6 +95,13 @@ master_doc = 'index'
 suppress_warnings = [
     "ref.citation",
     "epub.duplicated_toc_entry",
+    "autosectionlabel.*",
+    "ref.doc",
+    "ref.ref",
+    "ref.option",
+    "ref.footnote",
+    "cpp.duplicate_declaration",
+    "autoapi",
 ]
 
 
@@ -108,7 +114,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ['**/*scipy.stats.mstats*',]
 
 
 # -- Options for HTML output -------------------------------------------------
