@@ -8,21 +8,17 @@
 Demo Documentation for D-Wave Systems
 =====================================
 
-Summarize/describe the purpose of this document.
-
-
 Hello! Welcome to my demo documentation for the `Technical Writer / Editor <https://jobs.lever.co/dwavesys/063f504f-9402-4953-9429-cf14452e1436>`_ position at D-Wave Systems. 
 
+This is intended as a display of my documentation style and ability, as well as a resource to learn more about me. Below are some of the most important sections of this doc:
 
-This paragraph should include a brief intro as to what this is (purpose, job title)
+* :ref:`methodology` -- an outline of how I structure my documentation and the reasoning for each of my choices/methods.
+* :ref:`install` -- a partial sample of an Installation page, intended to show my structure and formatting.
+* :ref:`Additional Writing Samples <quick-links>` -- additional writing samples (including an :ref:`MLOO`), with a brief description of the purpose for each document to provide context.
 
-On this landing page could be shortcuts, quick information, or help links.
+And finally, 
 
-
-:Personal: Things to include:
-
-* motivation/purpose of this documentation
-* Not comprehensive (meant to be a demo not a complete doc), mix of about me and about d-wave
+* :ref:`research` -- a thorough overview of how my research interests and experience align with the work done at D-Wave. This section is perhaps the most important for showcasing my technical understanding. Viewing this section is *strongly encouraged*!
 
 
 ----
