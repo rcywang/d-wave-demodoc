@@ -135,6 +135,7 @@ html_static_path = ['_static']
 
 def setup(app):
     app.add_stylesheet('css/custom.css')
+    app.add_css_file('css/togglebutton.css')
 
 html_js_files = [
     'js/custom.js',
