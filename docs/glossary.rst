@@ -22,6 +22,8 @@ reST
 Bose-Einstein Condensate (BEC)
     In condensed matter physics, a Bose-Einstein condensate is a state of matter typically formed from a gas of integer spin particles (bosons) when cooled to temperatures close to absolute zero. The quantum state of a BEC can be collectively characterized by a single macroscopic wave function. Below a critical temperature, a large fraction of bosons occupy the lowest-energy state (ground state) and assume identical wave identities, acting like a ‘super atom’ that exhibits quantum behaviour at a macroscopic level.
 
+M-LOOP
+    M-LOOP is the machine-learning online optimization package for performing automated, online optimization of scientific experiments. The package employs machine learning algorithms to rapidly find optimal parameters for systems under control. See the `paper <http://www.nature.com/articles/srep25890>`_ and `documentation <https://m-loop.readthedocs.io/en/stable/index.html>`_.
 
 Hybrid solver
     Quantum-classical hybrid solvers implement state-of-the-art classical algorithms together with intelligent allocation of the QPU to parts of the problem where it benefits most.
