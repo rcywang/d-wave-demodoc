@@ -42,7 +42,7 @@ This is intended as a display of my documentation style and ability, as well as 
 
      * :doc:`../fourier`
      * :doc:`../randomsamp`
-     * :doc:`../matplotlib`
+     * `Plotting in Python (matplotlib.pyplot) <https://d-wave-demodoc.readthedocs.io/en/main/matplotlib.html>`_
      * :doc:`../main`
 
    * **Writing Samples**
