@@ -7,8 +7,8 @@ Quick Links
 
 * `Help Centre <https://support.dwavesys.com/hc/en-us>`_
 * `Frequently Asked Questions <https://support.dwavesys.com/hc/en-us/categories/360000291633-Frequently-Asked-Questions>`_
-* `Getting Started <https://support.dwavesys.com/hc/en-us/categories/360000260513-Getting-Started>`_ with Leap
-* `Getting Started <https://docs.ocean.dwavesys.com/en/stable/getting_started.html>`_ with Ocean Software
+* `Getting Started with Leap <https://support.dwavesys.com/hc/en-us/categories/360000260513-Getting-Started>`_ 
+* `Getting Started with Ocean Software <https://docs.ocean.dwavesys.com/en/stable/getting_started.html>`_
 * `GitHub repository <https://github.com/dwavesystems>`_ (for Ocean software and other open-source projects)
 * `Ocean documentation <https://docs.ocean.dwavesys.com/en/stable/>`_
 
@@ -35,15 +35,8 @@ How to Contribute
 -----------------
 
 * Want to support D-Wave Systems? `Contact us <https://dwavesys.com/contact>`_
-* `D-Wave Careers <https://www.dwavesys.com/careers>`_
-
-
-
-Community
-^^^^^^^^^
-
 * Join the `Leap community <https://support.dwavesys.com/hc/en-us/community/topics/360000206574-Welcome-to-the-Community->`_
-* `Careers <https://www.dwavesys.com/careers>`_ at D-Wave
+* Join the team at `D-Wave Careers <https://www.dwavesys.com/careers>`_ 
 
 
 
