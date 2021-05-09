@@ -61,7 +61,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx_togglebutton",
     "sphinx_panels",
-    "sphinxcontrib-details-directive",
+  #  "sphinxcontrib-details-directive",
 ]
 
 autosectionlabel_prefix_document = True
@@ -135,7 +135,7 @@ html_static_path = ['_static']
 
 def setup(app):
     app.add_stylesheet('css/custom.css')
-    app.add_css_file('css/togglebutton.css')
+   # app.add_css_file('css/togglebutton.css')
 
 html_js_files = [
     'js/custom.js',
