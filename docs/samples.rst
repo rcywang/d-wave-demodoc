@@ -17,8 +17,8 @@ Here are some **additional technical writing samples** of documents/papers I hav
 
 *As quantum systems become increasingly complex, optimization algorithms are becoming a requirement for high-precision experiments. MLOO offers an alternative to theoretical models, relying instead on experimental observations to continuously update an internal surrogate model. In this paper, two techniques for efficient and high-quality production of Bose-Einstein condensates (BECs) are reviewed:*
     
-    | *1. Optimizing experimental settings* [Wigley2016]_
-    | *2. Improving image acquisition* [Ness2020]_
+    | *1. Optimizing experimental settings in real time with MLOO (machine-learning online optimization)* [Wigley2016]_
+    | *2. Improving image acquisition with ANNs (artificial neural networks)* [Ness2020]_
 
 
 | View my paper on the new `Spectra <https://spectra.pub/about>`_ publishing platform: `spectra.pub/MLOO <https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments>`_
@@ -31,9 +31,7 @@ Here are some **additional technical writing samples** of documents/papers I hav
 .. [Ness2020] *Gal Ness, Anastasiya Vainbaum, Constantine Shkedrov, Yanay Florshaim, and Yoav Sagi. Single-exposure absorption imaging of ultracold atoms using deep learning. Physical Review Applied, 14(1):014011, 2020.*
 
 
-
 ----
-
 
 
 .. raw:: html
@@ -41,8 +39,7 @@ Here are some **additional technical writing samples** of documents/papers I hav
     <h3>Statement of Intent: Academic Goals</h3>
 
 
-*This is an excerpt from my UBC graduate studies (MSc) application for Fall 2021. It contains a detailed description of two of my research areas of interest:*
-
+*This is an excerpt from my UBC graduate studies (MSc) application for Fall 2021. It contains a detailed description of my research areas of interest:*
 
 
     High-energy astrophysics
@@ -50,9 +47,9 @@ Here are some **additional technical writing samples** of documents/papers I hav
     
 
     Atomic, molecular, and optical (AMO) physics
-        By using ultracold gases as a quantum simulator, I hope to explore the phenomena of **universality** in isolated quantum many-body systems, far from equilibrium. Neutral atom systems are also promising candidates for **scalable quantum computers**. One solution to unwanted crosstalk and low fidelity gates is to encode in the hyperfine states of optically trapped neutral atoms (in a magneto-optical trap or MOT), such as rubidium.
+        By using ultracold gases as a quantum simulator, I hope to explore the phenomena of **universality** in isolated quantum many-body systems, far from equilibrium. Neutral atom systems are also promising candidates for **scalable quantum computers**. One solution to unwanted crosstalk and low fidelity gates is to encode in the hyperfine states of optically trapped neutral atoms (in a `magneto-optical trap <https://d-wave-demodoc.readthedocs.io/en/latest/research.html#cold-atom-systems>`_ or MOT), such as rubidium.
 
-View in PDF: :ref:`Academic Goals <academicgoals>`
+View my statement: :ref:`Academic Goals <academicgoals>`
 
 
 .. seealso::
@@ -64,13 +61,8 @@ View in PDF: :ref:`Academic Goals <academicgoals>`
 .. [#foot2] In a strongly magnetized vacuum, nonlinear QED interactions induce birefringence; effectively, the propagation speed of photons in the two linear polarization modes (O- and X- modes) differ under these conditions.
 
 
-.. use .. raw:: html for version control
-
-
 
 ----
-
-
 
 
 
@@ -78,7 +70,7 @@ View in PDF: :ref:`Academic Goals <academicgoals>`
 
     <h3>Quantum Degenerate Gases (Mini-textbook) </h3>
 
-*In preparation for my meeting with Dr. Kirk Madison (head of UBC's Quantum Degenerate Gases (QDG) lab) I wrote this 'mini-textbook' to familiarize myself with the theoretical background and their experimental setup. A detailed study of their atomic and molecular apparatus was useful when discussing what I wanted to investigate for my master's, especially in terms of feasibility.*
+*In preparation for my meeting with Dr. Kirk Madison (head of UBC's Quantum Degenerate Gases (QDG) lab) I wrote this 'mini-textbook' to familiarize myself with the theoretical background and their experimental setup. A detailed study of their atomic and molecular apparatus was useful when discussing what I intend to investigate for my master's, especially in terms of feasibility.*
 
 View my mini-textbook: :ref:`QDG` (work-in-progress)
 
