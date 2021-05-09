@@ -42,6 +42,7 @@ This is intended as a display of my documentation style and ability, as well as 
 
      * :doc:`../fourier`
      * :doc:`../randomsamp`
+     * :doc:`../matplotlib`
      * :doc:`../main`
 
    * **Writing Samples**
