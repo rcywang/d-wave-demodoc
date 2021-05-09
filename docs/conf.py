@@ -34,7 +34,7 @@ author = 'Rachel Wang'
 version = 'v1.1'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.1'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 
@@ -47,7 +47,6 @@ extensions = [
     "sphinx.ext.napoleon", # numpy style documentation
     # "sphinx.ext.coverage", # checks coverage
     "sphinx.ext.intersphinx",
-    "sphinx.ext.mathjax",
     "sphinx.ext.ifconfig",
     "sphinx.ext.autosummary", # generate autodoc summaries
     "sphinx.ext.doctest", # execute code snippets for demo
