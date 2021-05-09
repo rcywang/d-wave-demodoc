@@ -3,14 +3,16 @@
 Configuration
 -------------
 
-This section uses the `Initial Set Up <https://docs.ocean.dwavesys.com/en/stable/getting_started.html#initial-set-up>`_ instructions from D-Wave's official `Ocean Documentation <https://docs.ocean.dwavesys.com/en/stable/index.html>`_ and is meant as a placeholder or example for the configuration section of software installation/documentation.
+This section uses the `Initial Set Up <https://docs.ocean.dwavesys.com/en/stable/getting_started.html#initial-set-up>`_ instructions from D-Wave's official `Ocean Documentation <https://docs.ocean.dwavesys.com/en/stable/index.html>`_ and is meant as a placeholder and example for the configuration section of software installation/documentation.
+
+----
 
 Creating a Configuration File 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The simplest way to configure solve access is to use the `interactive CLI <https://docs.ocean.dwavesys.com/en/stable/docs_cli.html#dwave-cli>`_, which is installed as part of the `dwave-ocean-sdk <https://github.com/dwavesystems/dwave-ocean-sdk>`_ installation.
+The simplest way to configure solver access is to use the `interactive CLI <https://docs.ocean.dwavesys.com/en/stable/docs_cli.html#dwave-cli>`_, which is installed as part of the `dwave-ocean-sdk <https://github.com/dwavesystems/dwave-ocean-sdk>`_ installation.
 
-If you did not already do so with the ``dwave setup`` command in the :ref:`Set Up Your Environment <venvsetup>` section, or want to make changes at a later time, you can use the ``dwave config`` command:
+If you have not already done so with the ``dwave setup`` command in the :ref:`Set Up Your Environment <venvsetup>` section, or want to make changes at a later time, you can use the ``dwave config`` command:
 
 .. code-block:: bash
 
