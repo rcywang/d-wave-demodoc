@@ -31,10 +31,10 @@ import sphinx_rtd_theme
 project = 'D-Wave Demo Documentation'
 copyright = '2021, Rachel Wang'
 author = 'Rachel Wang'
-version = '0.0.2'
+version = 'v1.1'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '0.1.1'
 
 # -- General configuration ---------------------------------------------------
 
