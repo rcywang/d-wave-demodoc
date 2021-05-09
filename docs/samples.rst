@@ -2,13 +2,9 @@
 
 Overview
 ========
-.. Quick Links & Summaries
 
 Here are some **additional technical writing samples** of documents/papers I have written that exemplify my proficiency in technical writing. For a more comprehensive representation of my skills, I have included writing samples from a variety of sources. Links to all samples are listed below with their accompanying description.
 
-.. .. raw:: html
-
-..     <h3>Machine-learning Online Optimization (MLOO) for Cold-atom Experiments</h3>
 
 ----
 
@@ -21,8 +17,8 @@ Here are some **additional technical writing samples** of documents/papers I hav
 
 *As quantum systems become increasingly complex, optimization algorithms are becoming a requirement for high-precision experiments. MLOO offers an alternative to theoretical models, relying instead on experimental observations to continuously update an internal surrogate model. In this paper, two techniques for efficient and high-quality production of Bose-Einstein condensates (BECs) are reviewed:*
     
-    | *1. optimizing experimental settings* [Wigley2016]_
-    | *2. improving image acquisition* [Ness2020]_
+    | *1. Optimizing experimental settings* [Wigley2016]_
+    | *2. Improving image acquisition* [Ness2020]_
 
 
 | View my paper on the new `Spectra <https://spectra.pub/about>`_ publishing platform: `spectra.pub/MLOO <https://spectra.pub/ml/online-optimisation-for-cold-atom-experiments>`_
@@ -34,12 +30,9 @@ Here are some **additional technical writing samples** of documents/papers I hav
 
 .. [Ness2020] *Gal Ness, Anastasiya Vainbaum, Constantine Shkedrov, Yanay Florshaim, and Yoav Sagi. Single-exposure absorption imaging of ultracold atoms using deep learning. Physical Review Applied, 14(1):014011, 2020.*
 
-.. reST does not have an easy way to specify how links are opened; good useability practice says you should not force a user to open a link in a new tab/window, but rather let them decide
-
 
 
 ----
-
 
 
 
