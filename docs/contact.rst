@@ -15,5 +15,5 @@ Contact
 
 :Address:
     | 3033 Beta Avenue
-    | Burnaby BC V5G 4M9
+    | Burnaby, BC V5G 4M9
     | Canada, Earth
