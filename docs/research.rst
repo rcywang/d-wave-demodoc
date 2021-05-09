@@ -3,23 +3,12 @@
 Research Interests
 ==================
 
-There are a few parallels that can be drawn between my research interests/experience, both in AMO physics and high-energy astrophysics, and the work done at D-Wave. Comparisons of a few examples of related concepts are presented in the following sections.
+There are a few parallels that can be drawn between my research interests/experience -- both in AMO physics and high-energy astrophysics -- and the work done at D-Wave. Comparisons of a few examples of related concepts are presented in the following sections.
 
-.. * Using an applied magnetic field to control the depth of the potential well
-    * spin alignment energy minimization
-.. * Correlation lengths / coupling strength
 
 .. important:: 
 
     The following content assumes that the reader has some knowledge of quantum mechanics.
-
-.. .. panels::
-
-..     Top left 
-
-..     ----
-
-..     top-right
 
 
 Cold Atom Systems
@@ -41,15 +30,15 @@ In addition to the MOT is the **magnetic trap (MT)**, which is bad at cooling an
 
       This experimental sequence involves loading the MOT with atoms, transferring the atomic sample to the MT, waiting for a certain hold time :math:`t`, and then making a measurement.
 
-    | **A**  Measure fluorescence :math:`V` from the SS (steady state)
-    |        (*Turn on MOT light and allow it to reach steady state fluorescence voltage :math:`V_{\operatorname{MOT}}`*)
-    | **B**  Turn off light, :math:`\uparrow \vec{B}` to load trap. Atoms are held from time :math:`t`
-    | **C**  MOT light back on, :math:`\downarrow \vec{B}` back to original MOT setting
-    |        (Turn on MOT light briefly to check the number of atoms in the trap (by measuring fluorescence). The MOT loads briefly during this measurement, but this is OK since we use this line to extrapolate the fluorescence -- after the MOT light is back on)
-    | **D**  :math:`\vec{B}` off and allow trapped atoms to escape. MOT light is ON to record background light level
-    |        (Empty MOT by turning off the magnetic field and measuring the background voltage)
-    | **E**  :math:`\vec{B}` on to allow MOT to reload completely before returning to step **A**, varying :math:`t` with each cycle
-    |        (Reset the MOT -- i.e. MOT light still on, :math:`\vec{B}` back on)
+    | **A**   Measure fluorescence :math:`V` from the SS (steady state)
+    |         *(Turn on MOT light and allow it to reach steady state fluorescence voltage* :math:`V_{\operatorname{MOT}}` *)*
+    | **B**   Turn off light, :math:`\uparrow \vec{B}` to load trap. Atoms are held from time :math:`t`
+    | **C**   MOT light back on, :math:`\downarrow \vec{B}` back to original MOT setting
+    |         *(Turn on MOT light briefly to check the number of atoms in the trap (by measuring fluorescence). The MOT loads briefly during this measurement, but this is OK since we use this line to extrapolate the fluorescence -- after the MOT light is back on)*
+    | **D**   :math:`\vec{B}` off and allow trapped atoms to escape. MOT light is ON to record background light level
+    |         *(Empty MOT by turning off the magnetic field and measuring the background voltage)*
+    | **E**   :math:`\vec{B}` on to allow MOT to reload completely before returning to step **A**, varying :math:`t` with each cycle
+    |         *(Reset the MOT -- i.e. MOT light still on,* :math:`\vec{B}` *back on)*
 
 
 
@@ -136,6 +125,123 @@ All of the above (in this section) are in reference to the subfigures in :numref
 .. [#foot5] They lose :math:`\Delta E` to the Zeeman effect at a slower rate as :math:`R\rightarrow 0`
 
 
+
+
+
+.. Optimization with D-Wave QPUs and MLOO
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Probabilistic Machine Learning and Surrogate Models
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For high-precision and time-limited quantum gas experiments, optimizing experimental settings through an exhaustive search is highly impractical given the large parameter space of a typical sequence. Instead, this discovery process can be automated with **machine-learning online optimization (MLOO)**. As an alternative to theoretical modelling, online optimization relies on *experimental observations* to update an internal surrogate model. 
+
+
+Probabilistic models
+    | The model infers a distribution in **function space** -- rather than over individual (function) parameters -- and updates the hypothesized prior distribution based on new data. The updated posterior distribution, computed from both the prior and data/observation, is used to choose the next sampling point [#foot6]_.
+    | 
+    |   *prior* -- the prior probability distribution is chosen before observing the data.
+    |   *posterior distribution* -- the posterior probability distribution is the updated distribution over possible functions that narrows with each observation (defined after observing the data).
+
+.. [#foot6] In **Gaussian Processes (GP)**, each point is treated as a random variable and the distribution of a GP is the joint distribution over these functions, with a continuous domain. GPs are favoured for their strong generalizability, tractability, and flexible non-parametric inference, making them suitable for treating complex regression problems such as small samples and nonlinearities.
+
+
+.. _comparison:
+
+A Direct Comparison: D-Wave Solvers and M-LOOP
+++++++++++++++++++++++++++++++++++++++++++++++
+
+Consider the following optimization problems for cold atom experiments and D-Wave solvers:
+
+    1. Determining the optimal experimental settings for the efficient and high-quality production of BECs (**M-LOOP**)
+    2. Discrete optimization of objective functions -- the Ising model and quadratic unconstrained binary optimization (QUBO) (**D-Wave solvers**)
+
+
+.. list-table:: Comparing optimization strategies for discrete and continuous distribution models used by the MLOO package and D-Wave solvers.
+    :header-rows: 1
+    :widths: auto
+    :align: center
+
+    * - Cold atom experiments (M-LOOP)
+      - D-Wave Solvers 
+    * - Let the parameter space be spanned by :math:`M` experimental settings (e.g. voltage, laser parameters, timing, field strength, etc.).
+      - Let the parameter space be spanned by :math:`N` binary representations of all numbers from :math:`0` to :math:`2^N-1`. 
+    * - A point in this space is represented by a vector :math:`\mathbf{X}\in \mathbb{R}^M`. 
+      - A point in this space is represented by a vector :math:`X\in \{0,1\}`.
+    * - We can represent :math:`\mathbf{X}` as a column vector, :math:`\mathbf{X}^T=[x_1, x_2 \ldots, x_N]`, where :math:`\mathbf{x}_n` is the :math:`n^{th}` set of experimental settings.
+      - We can represent :math:`X` as a column vector, :math:`X^T=[x_1, x_2\ldots, x_N]`, where :math:`x_n` is the state of the :math:`n^{th}` binary random variable in :math:`X`.
+    * - The random variables :math:`x_n` are continuous.
+      - The random variables :math:`x_n` are discrete.
+    * - The  normal (Gaussian) distribution models :math:`\mathcal{C}(\mathbf{X})` (cost function). In the MLOO approach, an estimate (^) of the stochastic process given our observations :math:`\mathcal{\hat{C}}(\mathbf{X}|\mathcal{O})` is used to determine what parameters to try next.
+      - A Boltzmann distribution defines the probability for each possible state that :math:`X` can take using (assuming :math:`\beta=\frac{1}{k_BT}=1`):
+
+        .. math::
+
+            p(X) = \frac{1}{Z}\exp \left(-E(X;\theta)\right)
+
+    * - The *biased* cost function, parameterized by :math:`b`, is
+     
+        .. math::
+
+            B_{\hat{C}}(\mathbf{X}) \equiv b M_{\hat{C}}(\mathbf{X})-(1-b) \Sigma_{\hat{C}}^{2} 
+
+        where :math:`b` is linearly increased from :math:`0` to :math:`1` in a cycle to sweep between the 'scientist' (:math:`b=0`) and 'optimizer' (:math:`b=1`) strategies. :math:`M_{\hat{C}}` and :math:`\Sigma_{\hat{C}}^{2}` are as defined in [Wigley2016]_.
+      - The partition function contains :math:`E(X;\theta)` which is parameterized by :math:`\theta` and contains biases:
+
+        .. math::
+
+            Z = \sum_X \exp\left(-E(X;\theta)\right)
+
+    * - The squared exponential correlation function (or Gaussian kernel) :math:`K` defines the covariance:
+
+        .. math::
+
+            K\left(\mathbf{X}_{i}, \mathbf{X}_{j}\right)=\exp \left\{-\frac{1}{2} \sum_{k=1}^{M}\left(\mathbf{X}_{i}[k]-\mathbf{X}_{j}[k]\right)^{2} / h_{k}^{2}\right\}
+
+        where :math:`\mathbf{X}_i[k]` is the :math:`k^{th}` element in the vector :math:`\mathbf{X}_i` and :math:`h_k` belongs to a set :math:`H=(h_1,\ldots,h_M)` of correlation lengths (hyperparameters to be fitted online). See my :ref:`MLOO` for a more detailed description of online optimization strategies for forming Bose-Einstein condensates.
+      - The energy function :math:`E(X;\theta)` is represented via a quadratic form :math:`X^TQX`, in which matrix :math:`Q_{\theta}` is defined by biases :math:`q_i` and correlation weights :math:`q_{i,j}`. Then, :math:`Q` encapsulates the parameters of the energy function:
+
+        .. math::
+
+            E(X) = X^TQX = \sum_{i<j}q_{i,j}X_iX_j + \sum_i q_{i,i}x_i
+
+        See `Boltzmann Distribution <https://docs.dwavesys.com/docs/latest/c_ml_1.html#boltzmann-distribution>`_ for a more detailed description of online optimization strategies for forming Bose-Einstein condensates for more details.
+    * - The standard approach is to fit :math:`H` with maximum likelihood estimation. The likelihood of parameters :math:`H` given observations :math:`\mathcal{O}` is then:
+    
+        .. math::
+
+            L(H|\mathcal{O}) \qquad \text{and}\ \  w_i=L_i \sum_{i=1}^p L_i
+
+        where :math:`w_i` are the relative weights for the hyperparameters.
+      - The standard approach to fit :math:`E` is to maximize the log likelihood (:math:`LL`):
+
+        .. math::
+
+            LL(\theta) = \log(L(\theta)) = \sum_{d=1}^D \log\ p(v^{(d)};\theta)
+    * - For parameter optimization in [Ness2020]_ (not MLOOP), Adam (adaptive moment estimation) and Glorot were used. Adam merges the advantages of two popular optimization methods:
+         
+         1. *AdaGrad*, which handles sparse gradients, and 
+         2. *RMSProp*, which handles non-stationary objectives and excels in online settings.
+      - Equivalent to maximizing :math:`LL` is minimizing the negative log likelihood (:math:`NLL`) of the data. The *gradient descent* method is used to minimize :math:`NLL(\theta)`:
+        
+         1. From an initial guess for :math:`\theta`, calculate the gradient and take a step in that direction.
+         2. Iterate by taking the gradient at the new point and step in the new direction.
+
+
+.. important::
+
+    Some quantities above are not defined. Their definitions can be found in my :ref:`MLOO` and [Wigley2016]_ for cold atom experiments, and on `Background on Probabilistic Machine Learning <https://docs.dwavesys.com/docs/latest/c_ml_1.html#background-on-probabilistic-machine-learning>`_ for D-Wave solvers.
+
+
+.. [Barker2020] Adam J Barker, Harry Style, Kathrin Luksch, Shinichi Sunami, David Garrick, Felix Hill, Christopher J Foot, and Elliot Bentine. Applying machine learning optimization methods to the production of a quantum gas. Machine Learning: Science and Technology, 1(1):015007, 2020.
+
+.. [Wigley2016] Paul B Wigley, Patrick J Everitt, Anton van den Hengel, John W Bastian, Mahasen A Sooriyabandara, Gordon D McDonald, Kyle S Hardman, Ciaron D Quinlivan, P Manju, Carlos CN Kuhn, et al. Fast machine-learning online optimization of ultra-cold-atom experiments. Scientific reports, 6(1):1–6, 2016.
+
+.. [Ness2020] Gal Ness, Anastasiya Vainbaum, Constantine Shkedrov, Yanay Florshaim, and Yoav Sagi. Single-exposure absorption imaging of ultracold atoms using deep learning. Physical Review Applied, 14(1):014011, 2020.
+
+
+----
+
 .. _highenergyastro:
 
 High-Energy Astrophysics 
@@ -147,14 +253,14 @@ In a strongly magnetized vacuum, nonlinear QED interactions induce **birefringen
     2. *Mode conversion in NS atmospheres*: at a particular frequency, an X-mode photon may be converted into the O-mode (or O :math:`\rightarrow` X) as it traverses a "**vacuum resonance**" arising from competing **vacuum** and **plasma birefringent** effects. This produces a unique energy-dependent polarization signature, determined by the plasma density and magnetic field strength. 
 
 
-.. [Mignani2019] Roberto Mignani, Andrew Shearer, Agnieszka Słowikowska, and Silvia Zane. AstronomicalPolarisation from the Infrared to Gamma Rays. Springer, 2019.
+.. [Mignani2019] Roberto Mignani, Andrew Shearer, Agnieszka Słowikowska, and Silvia Zane. Astronomical Polarisation from the Infrared to Gamma Rays. Springer, 2019.
 .. [Heyl2002] Jeremy S Heyl and Nir J Shaviv. Qed and the high polarization of the thermal radiation from neutronstars. Physical Review D, 66(2):023002, 2002.
 
 
 .. _adiabatic:
 
-Adiabaticity in Quantum Computing, Polarization States, and Cyclotron Resonance
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adiabaticity in Quantum Computing and Polarization State Transformations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Minimum Energy Gap and Cyclotron Resonance
 ++++++++++++++++++++++++++++++++++++++++++++++
@@ -198,21 +304,34 @@ With vacuum birefringence, the expected polarization fraction (the degree of pol
       :figwidth: 60%
       :align: center
 
-    This is a hand-drawn picture by J.S. Heyl showing the resonance crossings (circled). Note that the frequencies on the x-axis is scaled by the cyclotron resonance :math:`\omega_B`. This image can be contrasted with :numref:`eigenspectrum` (Fig. 7 of `Annealing in Low-Energy States <https://docs.dwavesys.com/docs/latest/c_gs_2.html#annealing-in-low-energy-states>`_).
+    This is a hand-drawn picture by J.S. Heyl showing the resonance crossings (circled). Note that the frequencies on the x-axis is scaled by the cyclotron resonance :math:`\omega_B` (or :math:`\omega_c`). This image can be contrasted with :numref:`eigenspectrum` (Fig. 7 of `Annealing in Low-Energy States <https://docs.dwavesys.com/docs/latest/c_gs_2.html#annealing-in-low-energy-states>`_).
 
 
-.. math:: 
+The nonrelativistic scattering cross sections for the two polarization modes are
 
-    \begin{align*}
-    \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c+\omega)^2} + \frac{1}{2}\sin^2\theta \right) \\
-    \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c-\omega)^2} + \frac{1}{2}\sin^2\theta \right)
-    \end{align*}
+ * for photons travelling *nearly perpendicular* to the magnetic field direction:
 
-where :math:`\sigma_T` is the Thomson scattering cross section.
+    .. math::
+    
+        \begin{align*}
+        \sigma_{\operatorname{O}} &\approx \sigma_T \sin^2\theta \\
+        \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c-\omega)^2} + \cos^2\theta \right)
+        \end{align*}
+
+ * for photons travelling *nearly parallel* to the magnetic field direction:
+  
+    .. math:: 
+
+        \begin{align*}
+        \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c+\omega)^2} + \frac{1}{2}\sin^2\theta \right) \\
+        \sigma_{\operatorname{O}} &\approx \sigma_T \left(\frac{\omega^2}{(\omega_c-\omega)^2} + \frac{1}{2}\sin^2\theta \right)
+        \end{align*}
+
+    where :math:`\sigma_T` is the Thomson scattering cross section.
 
 As :math:`\omega\rightarrow\omega_c`, the :math:`X`-mode cross section increases, becoming larger than the :math:`O`-mode's. However, very close to the resonance where :math:`\omega\sim\omega_c`, the energy transfer from photons heats up electrons and damping effects must be taken into consideration (the equations for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}` are no longer valid).
 
-The **resonant scattering** occurrs when the photon frequency (in the electron's rest frame, where scattering is nonrelativistic) equals the cyclotron frequency (:math:`\omega=\omega_c`). Looking at the above expressions for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}`, we see that for a photon travelling along and across the field, only the :math:`X`-mode photons are resonantly scattered. Radiation from the atmosphere is mostly **polarized perpendicular** (:math:`X`), and so it will remain in its (perpendicular) polarization state after the resonant scattering. If we were to 'look more closely', including geometric considerations, we find that the resonant scattering can switch the polarization states [Caiazzo2019]_. 
+The **resonant scattering** occurs when the photon frequency (in the electron's rest frame, where scattering is nonrelativistic) equals the cyclotron frequency (:math:`\omega=\omega_c`). Looking at the above expressions for :math:`\sigma_{\operatorname{O}}` and :math:`\sigma_{\operatorname{X}}`, we see that for a photon travelling along and across the field, only the :math:`X`-mode photons are resonantly scattered. Radiation from the atmosphere is mostly **polarized perpendicular** (:math:`X`), and so it will remain in its (perpendicular) polarization state after the resonant scattering. If we were to 'look more closely', including geometric considerations, we find that the resonant scattering can switch the polarization states [Caiazzo2019]_. 
 
 
 Near the cyclotron resonance (and including thermal effects), I theoretically calculated a **critical photon energy** :math:`E_{\gamma}^{\operatorname{crit}}`, above which the evolution is adiabatic. This leads us to the following conclusion:
@@ -248,7 +367,7 @@ In general, if :math:`|\hat{\mathbf{\Omega}}|` is sufficiently large, the vector
 
 .. math::
 
-    \left| \hat{\Omega} \left(\frac{d\ln |\hat{\Omega}|}{d\lambda} \right)^{-1} \right|
+    \left| \hat{\Omega} \left(\frac{d\ln |\hat{\Omega}|}{d\lambda} \right)^{-1} \right| \geq 0.5
 
 This equation is known as the **adiabatic criterion**. If it holds, the polarization states evolve adiabatically, and the polarization direction will follow the direction of birefringence [Caiazzo2019]_.
 
@@ -284,41 +403,63 @@ Networks of these logical qubits *freeze out* at different points during the ann
     * Overall timescale :math:`t_f`
 
 
-.. dropdown:: More on energy scales and annealing schedules (NOT DONE)
+.. dropdown:: More on energy scales and the standard annealing schedule :math:`s=t/t_f`
     :animate: fade-in-slide-down
 
     We define a *standard annealing schedule* :math:`s=t/t_f`, where :math:`t_f` is the *annealing time*. A single, global, time-dependent bias controls the evolution of :math:`A` and :math:`B` and at any intermediate value of :math:`s` the ratio :math:`A(s)/B(s)` is fixed.
 
+    In general, freezeout points move earlier in the annealing schedule :math:`s` for:
 
-.. put in fig 73
+        * larger logical qubit sizes
+        * more strongly coupled logical qubits
+        * smaller annealing time :math:`t_f`
+
+    .. list-table::
+
+      * - .. figure:: annealing-functions.png
+      
+            Annealing functions :math:`A(s)` and :math:`B(s)`.
+
+              .. math::
+          
+                \begin{cases}
+                      \text{Annealing start} & s=0 & A(s) \gg B(s) \\
+                      \text{Annealing end} & s=1 & A(s) \ll B(s) \\
+                \end{cases}
+
+            Data shown are representative of `Advantage systems <https://www.dwavesys.com/d-wave-two%E2%84%A2-system#:~:text=The%20Advantage%E2%84%A2%20quantum%20system,cloud%20service%20built%20for%20business.>`_. From Fig. 73 of `Freezeout Points <https://docs.dwavesys.com/docs/latest/c_qpu_0.html#freezeout-points>`_.
+      
+        - .. figure:: annealing-functions-cluster.png
+      
+            Representative annealing schedules with *freezeout points* for various logical qubit sizes and :math:`t_f=5\ \mu s`. The dashed lines denote localization points for :math:`N=1` through to :math:`N=5` logical qubit clusters from right to left. 
+            
+            Data shown are representative of `D-Wave 2X systems <https://www.dwavesys.com/sites/default/files/D-Wave%202X%20Tech%20Collateral_1016F_0.pdf>`_. From Fig. 75 of `Freezeout Points <https://docs.dwavesys.com/docs/latest/c_qpu_0.html#freezeout-points>`_.
 
 
+----
 
 
+Isolated Quantum Many-Body Systems
+-----------------------------------
+
+.. note::
+    
+    This section is a brief synopsis of my research interests, specifically pertaining to non-equilibrium dynamics in isolated quantum many-body systems. For a more thorough description, see my :ref:`academicgoals`.
 
 
-Optimization with D-Wave QPUs and MLOO
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Universality and MBL Phases
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Universality is a prediction of the **renormalization group theory** of phase transitions. The theory states that the thermodynamic properties of a system (near a phase transition) only depend on a small number of features, such as dimensionality and symmetry, and are independent of the microscopic properties of the system. In other words, quantum systems belonging to the same **universality class** behave in precisely the same way, insensitive to scaling. New universality classes of quantum dynamics have been unveiled by many-body localized (MBL) phases [Khemani2017]_, though many open questions remain regarding MBL phases and the **eignestate thermalization hypothesis** (ETH). 
+
+.. _neutralatomsim:
+
+Neutral Atom Systems as Quantum Simulators
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MBL states have the unique ability to retain the memory of the initial state -- an entanglement property that naturally lends itself to storing quantum information. For achieving scalable universal quantum computers (QCs), we look to neutral atom systems. One solution to overcoming challenges with QCs (e.g. crosstalk and low-fidelity gates) is to encode in the *hyperfine states* of optically trapped neutral atoms such as rubidium. Multi-qubit gates are mediated by exciting atoms to strongly interacting Rydberg states [Levine2019]_.
 
 
-* link to MLOO for optimization
+.. [Khemani2017] Vedika Khemani, DN Sheng, and David A Huse. Two universality classes for the many-body localization transition.Physical review letters, 119(7):075702, 2017.
 
-
-
-|
-
-
-
-.. https://support.dwavesys.com/hc/en-us/community/topics/360000211733-Physics
-
-.. https://support.dwavesys.com/hc/en-us/articles/360003680954-What-Is-Quantum-Annealing-
-
-
-Quantum many-body systems
--------------------------
-
-Non-equilibrium dynamics
-
-Tuning Correlation Lengths
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-Correlation lengths and the unitary limit (tuning interaction strengths)... Tuning Correlation Lengths?
+.. [Levine2019] Harry Levine, Alexander Keesling, Giulia Semeghini, Ahmed Omran,Tout T Wang, Sepehr Ebadi,Hannes Bernien, Markus Greiner, Vladan Vuletić, Hannes Pichler, et al. Parallel implementation ofhigh-fidelity multiqubit gates with neutral atoms.Physical review letters, 123(17):170503, 2019.
